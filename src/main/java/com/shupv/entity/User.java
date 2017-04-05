@@ -10,15 +10,7 @@ public class User {
     private String phoneNumber;
     private Role role;
     private String name;
-    private String ttt;
-
-    public String getTtt() {
-        return ttt;
-    }
-
-    public void setTtt(String ttt) {
-        this.ttt = ttt;
-    }
+    private String mail;
 
     public int getUserId() {
         return userId;
@@ -66,5 +58,13 @@ public class User {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getMail() {
+        return mail;
+    }
+
+    public void setMail(String mail) {
+        this.mail = mail;
     }
 }
