@@ -10,6 +10,15 @@ public class User {
     private String phoneNumber;
     private Role role;
     private String name;
+    private String ttt;
+
+    public String getTtt() {
+        return ttt;
+    }
+
+    public void setTtt(String ttt) {
+        this.ttt = ttt;
+    }
 
     public int getUserId() {
         return userId;
