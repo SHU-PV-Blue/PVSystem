@@ -4,11 +4,11 @@ package com.shupv.entity;
  * Created by zihua on 17-3-29.
  */
 public class User {
-    private int userId;
+    private int userId;//用户的id
     private String userName;
     private String password;
     private String phoneNumber;
-    private Role role;
+    private Role role;//用户所对应的角色
     private String name;
     private String mail;
 
