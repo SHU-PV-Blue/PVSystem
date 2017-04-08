@@ -9,7 +9,7 @@ public class Permit {
     private int PermitNum; //权限编号
     private String permitName;
     private String url;
-    private Set<Role> role;
+    private Set<Role> role;//角色集
 
     public int getPermitNum() {
         return PermitNum;

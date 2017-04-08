@@ -97,12 +97,12 @@ public class Project {
     private int projectId;
     private String projectName;
     private PVPanel pvPanel;
-    private PVPanel row;
-    private PVPanel col;
-    private ClimaticData climaticData;
-    private LowPressureDevice lowPressureDevice;
-    private HighPressureDevice highPressureDevice;
+    private int row;//光伏电板行数
+    private int col;//光伏电板列数
+    private ClimaticData climaticData;//气象数据
+    private LowPressureDevice lowPressureDevice;//低压侧设备
+    private HighPressureDevice highPressureDevice;//高压侧设备
     private String site;//拟建地点
-    private Date buildDate;
-    private String comment;
+    private Date buildDate;//建设时间
+    private String comment;//备注
 }
