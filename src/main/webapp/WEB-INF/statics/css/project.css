@@ -1,0 +1,37 @@
+.juzhong{
+  text-align: center;
+  line-height: 50px;
+}
+body{
+
+  padding-bottom: 70px;
+}
+.left{
+  display: inline-block;
+
+}
+.right{
+  display: inline-block;
+   margin-left: 500px;
+ 
+}
+th,td{
+  width: 1%;
+
+}
+.hide{
+  display: none;
+}
+.show{
+  display: block;
+}
+#new{
+  display: inline-block;
+  margin-left: 20px;
+  font-weight: bold;
+}
+#inew{
+  margin-left: 20px;
+  width: 70%;
+
+}
