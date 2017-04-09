@@ -4,25 +4,25 @@ package com.shupv.entity;
  * Created by chengs on 17-4-5.
  */
 public class SwitchCabinet {
-    private int switchCabinetId;
-    private String brand;
-    private String modelNumber;
-    private boolean isHighPressure;
-    private double generatrixRatedElectricity;
-    private double ratedVoltage;
-    private double ratedFrequency;
-    private int safeguardLevel;
-    private String use;
-    private String structureFrom;
+    private int id;
+    private String brand;//品牌
+    private String modelNumber;//型号
+    private boolean isHighPressure;//高低压类型
+    private double generatrixRatedElectricity;//母线额定电流/A
+    private double ratedVoltage;//额定电压/V
+    private double ratedFrequency;//额定频率/Hz
+    private int safeguardLevel;//防护等级
+    private String use;//用途
+    private String structureFrom;//结构形式
 
     public SwitchCabinet(){}
 
-    public int getSwitchCabinetId() {
-        return switchCabinetId;
+    public int getId() {
+        return id;
     }
 
-    public void setSwitchCabinetId(int switchCabinetId) {
-        this.switchCabinetId = switchCabinetId;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getBrand() {

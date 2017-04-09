@@ -3,33 +3,10 @@ package com.shupv.entity;
 /**
  * Created by chengs on 17-4-5.
  */
+//高压侧设备
 public class HighPressureDevice {
-    private int highPressureId;
-    private int deviceSize;
-    private int subHighPressureId;
+    private int id;
+    private int deviceSize;//设备类型
+    private int subHighPressure;//子类的设备编号
     public HighPressureDevice(){}
-
-    public int getHighPressureId() {
-        return highPressureId;
-    }
-
-    public void setHighPressureId(int highPressureId) {
-        this.highPressureId = highPressureId;
-    }
-
-    public int getDeviceSize() {
-        return deviceSize;
-    }
-
-    public void setDeviceSize(int deviceSize) {
-        this.deviceSize = deviceSize;
-    }
-
-    public int getSubHighPressureId() {
-        return subHighPressureId;
-    }
-
-    public void setSubHighPressureId(int subHighPressureId) {
-        this.subHighPressureId = subHighPressureId;
-    }
 }

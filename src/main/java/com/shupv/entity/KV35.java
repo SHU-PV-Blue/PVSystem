@@ -4,41 +4,41 @@ package com.shupv.entity;
  * Created by chengs on 17-4-5.
  */
 public class KV35 implements HighPressure {
-    private int subHighPressureId;
-    private int lowSwitchCabinetId;
-    private int highSwitchCabinetId;
-    private int StepUpTransformerId;
+    private int id;
+    private int lowSwitchCabinet;//低压开关柜编号
+    private int highSwitchCabinet;//高压开关柜编号
+    private int StepUpTransformer;//升压变压器编号
     public KV35(){}
 
-    public int getSubHighPressureId() {
-        return subHighPressureId;
+    public int getId() {
+        return id;
     }
 
-    public void setSubHighPressureId(int subHighPressureId) {
-        this.subHighPressureId = subHighPressureId;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public int getLowSwitchCabinetId() {
-        return lowSwitchCabinetId;
+    public int getLowSwitchCabinet() {
+        return lowSwitchCabinet;
     }
 
-    public void setLowSwitchCabinetId(int lowSwitchCabinetId) {
-        this.lowSwitchCabinetId = lowSwitchCabinetId;
+    public void setLowSwitchCabinet(int lowSwitchCabinet) {
+        this.lowSwitchCabinet = lowSwitchCabinet;
     }
 
-    public int getHighSwitchCabinetId() {
-        return highSwitchCabinetId;
+    public int getHighSwitchCabinet() {
+        return highSwitchCabinet;
     }
 
-    public void setHighSwitchCabinetId(int highSwitchCabinetId) {
-        this.highSwitchCabinetId = highSwitchCabinetId;
+    public void setHighSwitchCabinet(int highSwitchCabinet) {
+        this.highSwitchCabinet = highSwitchCabinet;
     }
 
-    public int getStepUpTransformerId() {
-        return StepUpTransformerId;
+    public int getStepUpTransformer() {
+        return StepUpTransformer;
     }
 
-    public void setStepUpTransformerId(int stepUpTransformerId) {
-        StepUpTransformerId = stepUpTransformerId;
+    public void setStepUpTransformer(int stepUpTransformer) {
+        StepUpTransformer = stepUpTransformer;
     }
 }

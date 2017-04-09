@@ -4,26 +4,26 @@ package com.shupv.entity;
  * Created by chengs on 17-4-5.
  */
 public class StepUpTransformer {
-    private int stepUpTransformerId;
-    private String deviceName;
+    private int id;
+    private String deviceName;//产品名
     private int size;//类型
     private String modelNumber;//分类
-    private double ratedCapacity;
-    private double loadLoss;
-    private double noloadElectricity;
-    private double shortCircuitImpedance;
-    private double ratedVoltage;
-    private String highPressureBranchRange;//这是一个范围
-    private int linkedGroupId;
-    private double noloadLoss;
+    private double ratedCapacity;//额定容量
+    private double loadLoss;//负载损耗（W）
+    private double noloadElectricity;//空载电流（%）
+    private double shortCircuitImpedance;//短路阻抗（%）
+    private double ratedVoltage;//额定电压（V）
+    private String highPressureBranchRange;//高压分接范围,这是一个范围
+    private int linkedGroupId;//联结组标号
+    private double noloadLoss;//空载损耗（W）
     public StepUpTransformer(){}
 
-    public int getStepUpTransformerId() {
-        return stepUpTransformerId;
+    public int getId() {
+        return id;
     }
 
-    public void setStepUpTransformerId(int stepUpTransformerId) {
-        this.stepUpTransformerId = stepUpTransformerId;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getDeviceName() {
