@@ -1,0 +1,14 @@
+ .juzhong{
+  text-align: center;
+  line-height: 50px;
+}
+body{
+  padding-bottom: 70px;
+}
+td,th{
+  padding: 5px;
+}
+.aa{
+  width: 20% !important;
+  margin: 20px auto !important; 
+}
