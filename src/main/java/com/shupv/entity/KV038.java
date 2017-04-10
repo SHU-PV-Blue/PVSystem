@@ -5,7 +5,7 @@ package com.shupv.entity;
  */
 public class KV038 implements HighPressure {
     private int id;
-    private int switchCabinet;//开关柜编号
+    private SwitchCabinet switchCabinet;//开关柜编号
     public KV038(){}
 
     public int getId() {
@@ -16,11 +16,11 @@ public class KV038 implements HighPressure {
         this.id = id;
     }
 
-    public int getSwitchCabinet() {
+    public SwitchCabinet getSwitchCabinet() {
         return switchCabinet;
     }
 
-    public void setSwitchCabinet(int switchCabinet) {
+    public void setSwitchCabinet(SwitchCabinet switchCabinet) {
         this.switchCabinet = switchCabinet;
     }
 }

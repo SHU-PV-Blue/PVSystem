@@ -5,9 +5,9 @@ package com.shupv.entity;
  */
 public class KV35 implements HighPressure {
     private int id;
-    private int lowSwitchCabinet;//低压开关柜编号
-    private int highSwitchCabinet;//高压开关柜编号
-    private int StepUpTransformer;//升压变压器编号
+    private SwitchCabinet lowSwitchCabinet;//低压开关柜编号
+    private SwitchCabinet highSwitchCabinet;//高压开关柜编号
+    private StepUpTransformer stepUpTransformer;//升压变压器编号
     public KV35(){}
 
     public int getId() {
@@ -18,27 +18,20 @@ public class KV35 implements HighPressure {
         this.id = id;
     }
 
-    public int getLowSwitchCabinet() {
+    public SwitchCabinet getLowSwitchCabinet() {
         return lowSwitchCabinet;
     }
 
-    public void setLowSwitchCabinet(int lowSwitchCabinet) {
+    public void setLowSwitchCabinet(SwitchCabinet lowSwitchCabinet) {
         this.lowSwitchCabinet = lowSwitchCabinet;
     }
 
-    public int getHighSwitchCabinet() {
+    public SwitchCabinet getHighSwitchCabinet() {
         return highSwitchCabinet;
     }
 
-    public void setHighSwitchCabinet(int highSwitchCabinet) {
+    public void setHighSwitchCabinet(SwitchCabinet highSwitchCabinet) {
         this.highSwitchCabinet = highSwitchCabinet;
     }
 
-    public int getStepUpTransformer() {
-        return StepUpTransformer;
-    }
-
-    public void setStepUpTransformer(int stepUpTransformer) {
-        StepUpTransformer = stepUpTransformer;
-    }
 }

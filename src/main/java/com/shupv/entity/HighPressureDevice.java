@@ -7,7 +7,7 @@ package com.shupv.entity;
 public class HighPressureDevice {
     private int id;
     private int deviceSize;//设备类型
-    private int subHighPressure;//子类的设备编号
+    private HighPressure subHighPressure;//子类的设备接口
     public HighPressureDevice(){}
 
     public int getId() {
@@ -26,11 +26,11 @@ public class HighPressureDevice {
         this.deviceSize = deviceSize;
     }
 
-    public int getSubHighPressure() {
+    public HighPressure getSubHighPressure() {
         return subHighPressure;
     }
 
-    public void setSubHighPressure(int subHighPressure) {
+    public void setSubHighPressure(HighPressure subHighPressure) {
         this.subHighPressure = subHighPressure;
     }
 }
