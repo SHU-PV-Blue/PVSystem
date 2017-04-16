@@ -7,7 +7,7 @@
 	<script src="http:\\cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
   <script src="http:\\cdn.bootcss.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
   <link href="http:\\cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/diya.css">
+  <link rel="stylesheet" type="text/css" href="../statics/css/diya.css">
 </head>
 <body>
 	<nav class="navbar navbar-inverse" role="navigation">
@@ -45,7 +45,7 @@
 <div class="row">
 <div class="col-md-3">
     <div class="thumbnail">
-      <img data-src="holder.js/300x200" alt="集中式逆变器" src="images/nibianqi.jpg" class="gao" >
+      <img data-src="holder.js/300x200" alt="集中式逆变器" src="../statics/images/nibianqi.jpg" class="gao" >
       <div class="caption">
         <a href="#" class="btn btn-primary btn-block " role="button">集中式逆变器</a>
   </div>
@@ -53,7 +53,7 @@
 </div>
 <div class="col-md-3">
     <div class="thumbnail">
-      <img data-src="holder.js/300x200" alt="直流汇流箱" src="images/huiliuxiang.jpg" class="gao">
+      <img data-src="holder.js/300x200" alt="直流汇流箱" src="../statics/images/huiliuxiang.jpg" class="gao">
       <div class="caption">
         <a href="#" class="btn btn-primary btn-block " role="button">直流汇流箱</a>
   </div>
@@ -61,7 +61,7 @@
 </div>
 <div class="col-md-3">
     <div class="thumbnail">
-      <img data-src="holder.js/100%x180" alt="直流配电柜" src="images/peidiangui.jpg" class="gao">
+      <img data-src="holder.js/100%x180" alt="直流配电柜" src="../statics/images/peidiangui.jpg" class="gao">
       <div class="caption">
         <a href="#" class="btn btn-primary btn-block " role="button">直流配电柜</a>
   </div>
@@ -69,7 +69,7 @@
 </div>
  <div class="col-md-3">
     <div class="thumbnail">
-      <img data-src="holder.js/300x200" alt="电缆" src="images/dianlan.jpg" class="gao">
+      <img data-src="holder.js/300x200" alt="电缆" src="../statics/images/dianlan.jpg" class="gao">
       <div class="caption">
         <a href="#" class="btn btn-primary btn-block " role="button">电缆</a>
   </div>
@@ -83,7 +83,7 @@
 <div class="row">
   <div class="col-md-3">
     <div class="thumbnail">
-      <img data-src="holder.js/300x200" alt="组串式逆变器" src="images/zunibianqi.png" class="gao">
+      <img data-src="holder.js/300x200" alt="组串式逆变器" src="../statics/images/zunibianqi.png" class="gao">
       <div class="caption">
         <a href="#" class="btn btn-primary btn-block " role="button">组串式逆变器</a>
   </div>
@@ -92,7 +92,7 @@
 
   <div class="col-md-3">
     <div class="thumbnail">
-      <img data-src="holder.js/300x200" alt="电缆" src="images/dianlan.jpg" class="gao">
+      <img data-src="holder.js/300x200" alt="电缆" src="../statics/images/dianlan.jpg" class="gao">
       <div class="caption">
         <a href="#" class="btn btn-primary btn-block " role="button">电缆</a>
   </div>
@@ -108,6 +108,5 @@
     <p class="juzhong">Copyright &copy; 2016 上海宝钢节能环保技术有限公司. All Rights Reserved</p>
 </nav>
 <!--底部导航条-->
-</body>
 </body>
 </html>

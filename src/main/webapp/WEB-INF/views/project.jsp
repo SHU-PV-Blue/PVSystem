@@ -8,7 +8,7 @@
     <script src="http:\\cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
     <script src="http:\\cdn.bootcss.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <link href="http:\\cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/project.css">
+    <link rel="stylesheet" type="text/css" href="../statics/css/project.css">
 </head>
 <body>
 <nav class="navbar navbar-inverse" role="navigation">
@@ -55,7 +55,6 @@
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
-</div>
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-3">
@@ -253,12 +252,12 @@
                             <th>转换效率/%</th>
                         </tr>
                         <tr>
-                            <td><input size=10/></td>
-                            <td><input size=10/></td>
-                            <td><input size=10/></td>
-                            <td><input size=10/size=10></td>
-                            <td><input size=10/></td>
-                            <td><input size=10/></td>
+                            <td><input type="text" size=10/></td>
+                            <td><input type="text"  size=10/></td>
+                            <td><input  type="text" size=10/></td>
+                            <td><input  type="text" size=10/></td>
+                            <td><input type="text" size=10/></td>
+                            <td><input type="text" size=10/></td>
                         </tr>
                         <tr>
                             <th>开路电压/V</th>
@@ -269,12 +268,12 @@
                             <th>最大功率温度系数(%/℃)</th>
                         </tr>
                         <tr>
-                            <td><input size=10/></td>
-                            <td><input size=10/></td>
-                            <td><input size=10/></td>
-                            <td><input size=10/></td>
-                            <td><input size=10/></td>
-                            <td><input size=10/></td>
+                            <td><input type="text" size=10/></td>
+                            <td><input type="text" size=10/></td>
+                            <td><input type="text" size=10/></td>
+                            <td><input type="text" size=10/></td>
+                            <td><input type="text" size=10/></td>
+                            <td><input type="text" size=10/></td>
                         </tr>
                         <tr>
                             <th>短路电流温度系数(%/℃)</th>
@@ -286,12 +285,12 @@
 
                         </tr>
                         <tr>
-                            <td><input size=10/></td>
-                            <td><input size=10/></td>
-                            <td><input size=10/></td>
-                            <td><input size=10/></td>
-                            <td><input size=10/></td>
-                            <td><input size=10/></td>
+                            <td><input type="text" size=10/></td>
+                            <td><input type="text" size=10/></td>
+                            <td><input type="text" size=10/></td>
+                            <td><input type="text" size=10/></td>
+                            <td><input type="text" size=10/></td>
+                            <td><input type="text" size=10/></td>
                         </tr>
                     </table>
                 </form>
@@ -658,7 +657,7 @@
             <div class="modal-body">
                 <from><!--这里是表单-->
                     <span id="new"> 项目名称：</span>
-                    <input id="inew"/>
+                    <input type="text" id="inew"/>
                     </form>
             </div>
             <div class="modal-footer">

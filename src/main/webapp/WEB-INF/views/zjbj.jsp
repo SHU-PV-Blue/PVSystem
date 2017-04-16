@@ -7,8 +7,8 @@
     <script src="http:\\cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
     <script src="http:\\cdn.bootcss.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <link href="http:\\cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/zjbj.css">
-    <script src="js/zujian.js"></script>
+    <link rel="stylesheet" type="text/css" href="../statics/css/zjbj.css">
+    <script src="../statics/js/zujian.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-inverse" role="navigation">
@@ -44,12 +44,12 @@
 <div class="row">
     <div class="col-md-10 col-md-offset-1">
         <div class="pull-left" id="heng">  <!--做处理-->
-            <img src="images/heng1.png">
-            <img src="images/heng2.png">
+            <img src="../statics/images/heng1.png">
+            <img src="../statics/images/heng2.png">
         </div>
         <div class="pull-left" id="shu" style="display:none">
-            <img src="images/shu1.png">
-            <img src="images/shu2.png">
+            <img src="../statics/images/shu1.png">
+            <img src="../statics/images/shu2.png">
         </div>
         <div class="pull-right">
             <span>阵列排列方式：&nbsp;&nbsp;&nbsp;</span><input type="radio" checked="checked" name="pai"/>横排&nbsp;&nbsp;&nbsp;

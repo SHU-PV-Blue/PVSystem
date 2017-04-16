@@ -7,7 +7,7 @@
     <script src="http:\\cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
     <script src="http:\\cdn.bootcss.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <link href="http:\\cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/register.css">
+    <link rel="stylesheet" type="text/css" href="../statics/css/register.css">
 </head>
 <body>
 <nav class="navbar navbar-inverse" role="navigation">
@@ -27,13 +27,13 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">自定义设备</a></li>
+                <li class="active"><a href="/home/project">自定义设备</a></li>
                 <li><a href="#">我的项目</a></li>
                 <li><a href="#">新建项目</a></li>
                 <li><a href="#">当前项目</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">登录</a></li>
+                <li><a href="../index">登录</a></li><!--可能有问题-->
                 <li class="active"><a href="#">注册</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
@@ -44,7 +44,7 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <h2>新用户注册</h2>
-            <p class="right">已有账号？<a href="login.html">马上登录</a>
+            <p class="right">已有账号？<a href="#">马上登录</a>
             <p>
             <form class="form-horizontal" role="form">
                 <div class="form-group">

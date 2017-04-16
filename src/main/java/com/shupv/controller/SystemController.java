@@ -17,5 +17,42 @@ public class SystemController {
     public String project() {
         return "project";
     }
+    @RequestMapping(value="/weather")
+    public String weather(){
+        return "weather";
+    }
+    @RequestMapping(value="/zjxx")
+    public String zjxx(){
+        return "zjxx";
+    }
+    @RequestMapping(value="/fwqj")
+    public String fwqj(){
+        return "fwqj";
+    }
+    @RequestMapping(value ="/zjbj" )
+    public String zjbj(){
+        return "zjbj";
+    }
+    @RequestMapping(value="/diyacesheji")
+    public String diyacesheji(){
+        return "diyacesheji";
+    }
+    @RequestMapping(value="/gaoyc")
+    public String gaoyc(){
+        return "gaoyc";
+    }
+    @RequestMapping(value="/xiaolu")
+    public String xiaolu(){
+        return "xiaolu";
+    }
+    @RequestMapping(value="/xiaoyi")
+    public String xiaoyi(){
+        return "xiaoyi";
+    }
+    @RequestMapping(value="/baogao")
+    public String baogao(){
+        return "baogao";
+    }
+
 }
 

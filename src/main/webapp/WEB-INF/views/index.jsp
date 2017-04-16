@@ -129,7 +129,7 @@
     <div class="thumbnail">
       <img data-src="holder.js/100%x180" alt="报告" src="images/报告.png" class="gao">
       <div class="caption">
-        <a href="#" class="btn btn-primary btn-block " role="button" id="button10">报告</a>
+        <a href="/home/baogao" class="btn btn-primary btn-block " role="button" id="button10" disabled>报告</a>
   </div>
 </div>
 </div>

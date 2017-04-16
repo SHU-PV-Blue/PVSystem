@@ -7,10 +7,10 @@
     <script src="http:\\cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
     <script src="http:\\cdn.bootcss.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <script src=></script>
-    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="../statics/css/nav.css">
     <link href="http:\\cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <script src="laydate/laydate.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/information.css">
+    <script src="../statics/laydate/laydate.js"></script>
+    <link rel="stylesheet" type="text/css" href="../statics/css/information.css">
 </head>
 <body>
 <nav class="navbar navbar-inverse" role="navigation">
@@ -76,10 +76,10 @@
             <td align="left"><input type="text" size=4 id="jingdu"> <input type="text" size=4 id="weidu"></td>
         </table>
     </div>
-    <div class="col-md-8"><img src="images/basic.jpg"></div>
+    <div class="col-md-8"><img src="../statics/images/basic.jpg"></div>
 </div>
 <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
     <p class="juzhong">Copyright &copy; 2016 上海宝钢节能环保技术有限公司. All Rights Reserved</p>
-    <body>
+    </body>
 </html>
    

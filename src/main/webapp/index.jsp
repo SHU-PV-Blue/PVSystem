@@ -43,7 +43,7 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <h2>欢迎登录</h2>
-            <p class="right">还没有账号？<a href="">立即注册</a>
+            <p class="right">还没有账号？<a href="/home/regiser">立即注册</a>
             <p>
             <form class="form-horizontal" role="form" action="/login">
                 <div class="form-group">

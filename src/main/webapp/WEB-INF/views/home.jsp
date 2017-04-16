@@ -57,7 +57,7 @@
     <div class="thumbnail">
       <img data-src="holder.js/300x200" alt="地理气象" src="../statics/images/气象.png" class="gao" >
       <div class="caption">
-        <a href="#" class="btn btn-primary btn-block " role="button" id="button2" disabled="disabled">地理气象</a>
+        <a href="/home/weather" class="btn btn-primary btn-block " role="button" id="button2" disabled="disabled">地理气象</a>
   </div>
 </div>
 </div>
@@ -65,7 +65,7 @@
     <div class="thumbnail">
       <img data-src="holder.js/300x200" alt="组件选型" src="../statics/images/组件.jpg" class="gao">
       <div class="caption">
-        <a href="#" class="btn btn-primary btn-block " role="button" id="button3" >组件选型</a>
+        <a href="/home/zjxx" class="btn btn-primary btn-block " role="button" id="button3" >组件选型</a>
   </div>
 </div>
 </div>
@@ -73,7 +73,7 @@
     <div class="thumbnail">
       <img data-src="holder.js/100%x180" alt="方位角和倾角设计" src="../statics/images/倾角.png" class="gao">
       <div class="caption">
-        <a href="#" class="btn btn-primary btn-block " role="button" id="button4">方位角和倾角设计</a>
+        <a href="/home/fwqj" class="btn btn-primary btn-block " role="button" id="button4">方位角和倾角设计</a>
   </div>
 </div>
 </div>
@@ -85,7 +85,7 @@
     <div class="thumbnail">
       <img data-src="holder.js/100%x180" alt="组件布局" src="../statics/images/组件布局.png" class="gao">
       <div class="caption">
-        <a href="#" class="btn btn-primary btn-block " role="button" id="button5">组件布局</a>
+        <a href="/home/zjbj" class="btn btn-primary btn-block " role="button" id="button5">组件布局</a>
   </div>
 </div>
 </div>
@@ -93,7 +93,7 @@
     <div class="thumbnail">
       <img data-src="holder.js/100%x180" alt="低压侧设计" src="../statics/images/低压侧.png" class="gao">
       <div class="caption">
-        <a href="#" class="btn btn-primary btn-block " role="button" id="button6">低压侧设计</a>
+        <a href="/home/diyacesheji" class="btn btn-primary btn-block " role="button" id="button6">低压侧设计</a>
   </div>
 </div>
 </div>
@@ -101,7 +101,7 @@
     <div class="thumbnail">
       <img data-src="holder.js/100%x180" alt="高压侧设计" src="../statics/images/高压侧.png" class="gao">
       <div class="caption">
-        <a href="#" class="btn btn-primary btn-block " role="button" id="button7">高压侧设计</a>
+        <a href="/home/gaoyc" class="btn btn-primary btn-block " role="button" id="button7">高压侧设计</a>
   </div>
 </div>
 </div>
@@ -109,7 +109,7 @@
     <div class="thumbnail">
       <img data-src="holder.js/100%x180" alt="效率分析" src="../statics/images/效率分析.png" class="gao">
       <div class="caption">
-        <a href="#" class="btn btn-primary btn-block " role="button" id="button8">效率分析</a>
+        <a href="/home/xiaolu" class="btn btn-primary btn-block " role="button" id="button8">效率分析</a>
   </div>
 </div>
 </div>
@@ -121,7 +121,7 @@
     <div class="thumbnail">
       <img data-src="holder.js/100%x180" alt="效益分析" src="../statics/images/效益分析.png" class="gao">
       <div class="caption">
-        <a href="#" class="btn btn-primary btn-block " role="button" id="button9">效益分析</a>
+        <a href="/home/xiaoyi" class="btn btn-primary btn-block " role="button" id="button9">效益分析</a>
   </div>
 </div>
 </div>
@@ -129,7 +129,7 @@
     <div class="thumbnail">
       <img data-src="holder.js/100%x180" alt="报告" src="../statics/images/报告.png" class="gao">
       <div class="caption">
-        <a href="#" class="btn btn-primary btn-block " role="button" id="button10">报告</a>
+        <a href="/home/baogao" class="btn btn-primary btn-block " role="button" id="button10">报告</a>
   </div>
 </div>
 </div>

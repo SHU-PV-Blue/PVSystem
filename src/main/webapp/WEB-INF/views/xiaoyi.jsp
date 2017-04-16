@@ -7,7 +7,7 @@
     <script src="http:\\cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
     <script src="http:\\cdn.bootcss.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <link href="http:\\cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/9.css">
+    <link rel="stylesheet" type="text/css" href="../statics/css/xiaoyi.css">
 </head>
 <body>
 <nav class="navbar navbar-inverse" role="navigation">
@@ -44,7 +44,7 @@
     <div class="row">
         <div class="col-md-3 col-md-offset-1">
             <div class="thumbnail">
-                <img data-src="holder.js/300x200" alt="参数列表" src="images/参数.png" class="gao">
+                <img data-src="holder.js/300x200" alt="参数列表" src="../statics/images/参数.png" class="gao">
                 <div class="caption">
                     <a href="#" class="btn btn-primary btn-block " role="button">参数列表</a>
                 </div>
@@ -52,7 +52,7 @@
         </div>
         <div class="col-md-3">
             <div class="thumbnail">
-                <img data-src="holder.js/300x200" alt="投资成本" src="images/投资成本.png" class="gao">
+                <img data-src="holder.js/300x200" alt="投资成本" src="../statics/images/投资成本.png" class="gao">
                 <div class="caption">
                     <a href="#" class="btn btn-primary btn-block " role="button">投资成本</a>
                 </div>
@@ -60,7 +60,7 @@
         </div>
         <div class="col-md-3">
             <div class="thumbnail">
-                <img data-src="holder.js/100%x180" alt="" src="images/符合条件.png" class="gao">
+                <img data-src="holder.js/100%x180" alt="" src="../statics/images/符合条件.png" class="gao">
                 <div class="caption">
                     <a href="#" class="btn btn-primary btn-block " role="button">符合条件EMC</a>
                 </div>
@@ -72,7 +72,7 @@
     <div class="row">
         <div class="col-md-3 col-md-offset-1">
             <div class="thumbnail">
-                <img data-src="holder.js/300x200" alt="收益期状况" src="images/收益.png" class="gao">
+                <img data-src="holder.js/300x200" alt="收益期状况" src="../statics/images/收益.png" class="gao">
                 <div class="caption">
                     <a href="#" class="btn btn-primary btn-block " role="button">收益期状况</a>
                 </div>
@@ -80,7 +80,7 @@
         </div>
         <div class="col-md-3">
             <div class="thumbnail">
-                <img data-src="holder.js/300x200" alt="综合指标" src="images/综合指标.png" class="gao">
+                <img data-src="holder.js/300x200" alt="综合指标" src="../statics/images/综合指标.png" class="gao">
                 <div class="caption">
                     <a href="#" class="btn btn-primary btn-block " role="button">综合指标</a>
                 </div>

@@ -9,7 +9,7 @@
 	<script src="http:\\cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
   <script src="http:\\cdn.bootcss.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
   <link href="http:\\cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/gaoyac.css">
+  <link rel="stylesheet" type="text/css" href="../statics/css/gaoyac.css">
 </head>
 <body>
 	<nav class="navbar navbar-inverse" role="navigation">
@@ -41,7 +41,6 @@
   </div><!-- /.container-fluid -->
 </nav>
 </div><!--导航结束-->
-
 <div class="container">
   <h3>接入电网等级：</h3>
   <input type="radio" name="dianya"/>10Kv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -51,7 +50,7 @@
 <div class="row">
   <div class="col-md-3">
     <div class="thumbnail">
-      <img data-src="holder.js/300x200" alt="低压开关柜" src="images/低压开关柜.jpg" class="gao">
+      <img data-src="holder.js/300x200" alt="低压开关柜" src="../statics/images/低压开关柜.jpg" class="gao">
       <div class="caption">
         <a href="#" class="btn btn-primary btn-block " role="button">低压开关柜</a>
   </div>
@@ -60,7 +59,7 @@
 
 <div class="col-md-3">
     <div class="thumbnail">
-      <img data-src="holder.js/300x200" alt="升压变压器" src="images/变压器.jpg" class="gao" >
+      <img data-src="holder.js/300x200" alt="升压变压器" src="../statics/images/变压器.jpg" class="gao" >
       <div class="caption">
         <a href="#" class="btn btn-primary btn-block " role="button">升压变压器</a>
   </div>
@@ -68,10 +67,11 @@
 </div>
 <div class="col-md-3">
     <div class="thumbnail">
-      <img data-src="holder.js/300x200" alt="高压开关柜" src="images/高压开关柜.jpg" class="gao">
+      <img data-src="holder.js/300x200" alt="高压开关柜" src="../statics/images/高压开关柜.jpg" class="gao">
       <div class="caption">
         <a href="#" class="btn btn-primary btn-block " role="button">高压开关柜</a>
   </div>
+</div>
 </div>
 </div>
 </div>
@@ -85,6 +85,5 @@
     <p class="juzhong">Copyright &copy; 2016 上海宝钢节能环保技术有限公司. All Rights Reserved</p>
 </nav>
 <!--底部导航条-->
-</body>
 </body>
 </html>
