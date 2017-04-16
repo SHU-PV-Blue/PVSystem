@@ -5,3 +5,4 @@ target
 .idea/dataSources.xml
 .idea/kotlinc.xml
 .idea/misc.xml
+.idea/uiDesigner.xml
