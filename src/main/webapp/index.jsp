@@ -45,7 +45,7 @@
             <h2>欢迎登录</h2>
             <p class="right">还没有账号？<a href="">立即注册</a>
             <p>
-            <form class="form-horizontal" role="form">
+            <form class="form-horizontal" role="form" action="/login">
                 <div class="form-group">
                     <label for="inputEmail3" class="col-sm-2 control-label">用户名</label>
                     <div class="col-sm-10">

@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * Created by zihua on 17-3-29.
  */
 @Controller
-@RequestMapping("home")
+@RequestMapping("login")
 public class LoginController {
-    @RequestMapping()
-    public String index(){
+    @RequestMapping(value = "")
+    public String home(){
         return "home";
     }
 }

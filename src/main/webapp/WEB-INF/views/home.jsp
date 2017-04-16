@@ -7,8 +7,8 @@
   <script src="http:\\cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
   <script src="http:\\cdn.bootcss.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
   <link href="http:\\cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/nav.css">
-  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="../statics/css/nav.css">
+  <link rel="stylesheet" type="text/css" href="../statics/css/index.css">
   <meta charset="UTF-8">
   <title>流程</title>
 </head>
@@ -29,7 +29,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav" id="nav1">
-        <li class="active"><a href="#">自定义设备</a></li>
+        <li class="active"><a href="/home/project">自定义设备</a></li>
         <li ><a href="#">我的项目</a></li>
         <li><a href="#">新建项目</a> </li>  
         <li><a href="#" >当前项目</a></li>
@@ -46,16 +46,16 @@
 <div class="row">
   <div class="col-md-3">
     <div class="thumbnail">
-      <img data-src="holder.js/300x200" alt="项目信息" src="images/xiangmuxinxi.png" class="gao">
+      <img data-src="holder.js/300x200" alt="项目信息" src="../statics/images/xiangmuxinxi.png" class="gao">
       <div class="caption">
-        <a href="#" class="btn btn-primary btn-block " role="button" id="button1">项目信息</a>
+        <a href="/home/information" class="btn btn-primary btn-block " role="button" id="button1">项目信息</a>
   </div>
 </div>
 </div>
 
 <div class="col-md-3">
     <div class="thumbnail">
-      <img data-src="holder.js/300x200" alt="地理气象" src="images/气象.png" class="gao" >
+      <img data-src="holder.js/300x200" alt="地理气象" src="../statics/images/气象.png" class="gao" >
       <div class="caption">
         <a href="#" class="btn btn-primary btn-block " role="button" id="button2" disabled="disabled">地理气象</a>
   </div>
@@ -63,7 +63,7 @@
 </div>
 <div class="col-md-3">
     <div class="thumbnail">
-      <img data-src="holder.js/300x200" alt="组件选型" src="images/组件.jpg" class="gao">
+      <img data-src="holder.js/300x200" alt="组件选型" src="../statics/images/组件.jpg" class="gao">
       <div class="caption">
         <a href="#" class="btn btn-primary btn-block " role="button" id="button3" >组件选型</a>
   </div>
@@ -71,7 +71,7 @@
 </div>
 <div class="col-md-3">
     <div class="thumbnail">
-      <img data-src="holder.js/100%x180" alt="方位角和倾角设计" src="images/倾角.png" class="gao">
+      <img data-src="holder.js/100%x180" alt="方位角和倾角设计" src="../statics/images/倾角.png" class="gao">
       <div class="caption">
         <a href="#" class="btn btn-primary btn-block " role="button" id="button4">方位角和倾角设计</a>
   </div>
@@ -83,7 +83,7 @@
 <div class="row ">
   <div class="col-md-3">
     <div class="thumbnail">
-      <img data-src="holder.js/100%x180" alt="组件布局" src="images/组件布局.png" class="gao">
+      <img data-src="holder.js/100%x180" alt="组件布局" src="../statics/images/组件布局.png" class="gao">
       <div class="caption">
         <a href="#" class="btn btn-primary btn-block " role="button" id="button5">组件布局</a>
   </div>
@@ -91,7 +91,7 @@
 </div>
 <div class="col-md-3">
     <div class="thumbnail">
-      <img data-src="holder.js/100%x180" alt="低压侧设计" src="images/低压侧.png" class="gao">
+      <img data-src="holder.js/100%x180" alt="低压侧设计" src="../statics/images/低压侧.png" class="gao">
       <div class="caption">
         <a href="#" class="btn btn-primary btn-block " role="button" id="button6">低压侧设计</a>
   </div>
@@ -99,7 +99,7 @@
 </div>
 <div class="col-md-3">
     <div class="thumbnail">
-      <img data-src="holder.js/100%x180" alt="高压侧设计" src="images/高压侧.png" class="gao">
+      <img data-src="holder.js/100%x180" alt="高压侧设计" src="../statics/images/高压侧.png" class="gao">
       <div class="caption">
         <a href="#" class="btn btn-primary btn-block " role="button" id="button7">高压侧设计</a>
   </div>
@@ -107,7 +107,7 @@
 </div>
 <div class="col-md-3">
     <div class="thumbnail">
-      <img data-src="holder.js/100%x180" alt="效率分析" src="images/效率分析.png" class="gao">
+      <img data-src="holder.js/100%x180" alt="效率分析" src="../statics/images/效率分析.png" class="gao">
       <div class="caption">
         <a href="#" class="btn btn-primary btn-block " role="button" id="button8">效率分析</a>
   </div>
@@ -119,7 +119,7 @@
 <div class="row gao">
   <div class="col-md-3">
     <div class="thumbnail">
-      <img data-src="holder.js/100%x180" alt="效益分析" src="images/效益分析.png" class="gao">
+      <img data-src="holder.js/100%x180" alt="效益分析" src="../statics/images/效益分析.png" class="gao">
       <div class="caption">
         <a href="#" class="btn btn-primary btn-block " role="button" id="button9">效益分析</a>
   </div>
@@ -127,7 +127,7 @@
 </div>
 <div class="col-md-3">
     <div class="thumbnail">
-      <img data-src="holder.js/100%x180" alt="报告" src="images/报告.png" class="gao">
+      <img data-src="holder.js/100%x180" alt="报告" src="../statics/images/报告.png" class="gao">
       <div class="caption">
         <a href="#" class="btn btn-primary btn-block " role="button" id="button10">报告</a>
   </div>
@@ -139,19 +139,19 @@
     <p class="juzhong">Copyright &copy; 2016 上海宝钢节能环保技术有限公司. All Rights Reserved</p>
 </nav>
 <!--底部导航条-->
-<script type="text/javascript">
-var ul=document.getElementById("bs-example-navbar-collapse-1");
-var li=ul.getElementsByTagName("li");
-for(var i=0;i<li.length;i++)
-{
-  li[i].index=i;
-  li[i].onclick=function(){
-    for(var j=0;j<li.length;i++)
-      li[j].className="";
-    this.className="active";
+<%--<script type="text/javascript">--%>
+<%--var ul=document.getElementById("bs-example-navbar-collapse-1");--%>
+<%--var li=ul.getElementsByTagName("li");--%>
+<%--for(var i=0;i<li.length;i++)--%>
+<%--{--%>
+  <%--li[i].index=i;--%>
+  <%--li[i].onclick=function(){--%>
+    <%--for(var j=0;j<li.length;i++)--%>
+      <%--li[j].className="";--%>
+    <%--this.className="active";--%>
 
-  }
-}
-</script>
+  <%--}--%>
+<%--}--%>
+<%--</script>--%>
 </body>
 </html>
