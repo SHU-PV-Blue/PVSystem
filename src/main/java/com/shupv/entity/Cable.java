@@ -1,21 +1,37 @@
 package com.shupv.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Created by Dell on 2017/4/5.
  */
- // 在@Table注释的name属性中添加对应数据库中表的名称
+// 电缆
+@Entity
 public class Cable implements Serializable{
     private int id;
     private String name;
-    private String model;
-    private int allowableCarryingCapacity;
-    private int capacity;
+    private String model;//型号
+    private int allowableCarryingCapacity;//允许载流量
+    private int capacity;//容量
+    private Set<CentralizedTransform> centralizedTransformSet
+            = new HashSet<CentralizedTransform>();
+    private Set<GroupTransformer> groupTransformerSet
+            = new HashSet<GroupTransformer>();
 
+    @OneToMany(mappedBy = "cable",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    public Set<GroupTransformer> getGroupTransformerSet() {
+        return groupTransformerSet;
+    }
+
+    public void setGroupTransformerSet(Set<GroupTransformer> groupTransformerSet) {
+        this.groupTransformerSet = groupTransformerSet;
+    }
+
+    @Id
+    @Column(name = "cable_id")
     public int getId() {
         return id;
     }
@@ -54,5 +70,14 @@ public class Cable implements Serializable{
 
     public void setCapacity(int capacity) {
         this.capacity = capacity;
+    }
+
+    @OneToMany(mappedBy = "cable",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    public Set<CentralizedTransform> getCentralizedTransformSet() {
+        return centralizedTransformSet;
+    }
+
+    public void setCentralizedTransformSet(Set<CentralizedTransform> centralizedTransformSet) {
+        this.centralizedTransformSet = centralizedTransformSet;
     }
 }

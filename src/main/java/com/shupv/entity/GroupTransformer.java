@@ -1,19 +1,25 @@
 package com.shupv.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Created by Dell on 2017/4/4.
  */
-// 在@Table注释的name属性中添加对应数据库中表的名称
-// 组串式变压器
-public class GroupTransformer implements Transformer {
-    private int id;
-    private GroupInverter groupInverter;
-    private Cable cable;
 
+// 组串式变压器
+@Entity
+public class GroupTransformer implements Transformer,Serializable {
+    private int id;
+    private GroupInverter groupInverter;//组串式逆变器
+    private Cable cable;//电缆
+    private Set<LowPressureDevice>lowPressureDeviceSet
+            = new HashSet<LowPressureDevice>();
+
+    @Id
+    @Column(name = "group_transformer_id")
     public int getId() {
         return id;
     }
@@ -22,6 +28,8 @@ public class GroupTransformer implements Transformer {
         this.id = id;
     }
 
+    @ManyToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    @JoinColumn(name = "group_inverter_id")
     public GroupInverter getGroupInverter() {
         return groupInverter;
     }
@@ -30,11 +38,22 @@ public class GroupTransformer implements Transformer {
         this.groupInverter = groupInverter;
     }
 
+    @ManyToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    @JoinColumn(name = "cable_id")
     public Cable getCable() {
         return cable;
     }
 
     public void setCable(Cable cable) {
         this.cable = cable;
+    }
+
+    @OneToMany(mappedBy = "groupTransformer",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    public Set<LowPressureDevice> getLowPressureDeviceSet() {
+        return lowPressureDeviceSet;
+    }
+
+    public void setLowPressureDeviceSet(Set<LowPressureDevice> lowPressureDeviceSet) {
+        this.lowPressureDeviceSet = lowPressureDeviceSet;
     }
 }

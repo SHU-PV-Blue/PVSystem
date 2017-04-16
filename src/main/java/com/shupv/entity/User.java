@@ -2,6 +2,8 @@ package com.shupv.entity;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Created by zihua on 17-3-29.
@@ -15,6 +17,16 @@ public class User implements Serializable{
     private Role role;//用户所对应的角色
     private String name;
     private String mail;
+    private Set<Project> projectSet = new HashSet<Project>();
+
+    @OneToMany(mappedBy = "user",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    public Set<Project> getProjectSet() {
+        return projectSet;
+    }
+
+    public void setProjectSet(Set<Project> projectSet) {
+        this.projectSet = projectSet;
+    }
 
     @Id
     public int getUserId() {

@@ -1,9 +1,15 @@
 package com.shupv.entity;
 
+import javax.persistence.*;
+import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * Created by chengs on 17-4-5.
  */
-public class SwitchCabinet {
+@Entity
+public class HighSwitchCabinet implements Serializable {
     private int id;
     private String brand;//品牌
     private String modelNumber;//型号
@@ -14,10 +20,10 @@ public class SwitchCabinet {
     private int safeguardLevel;//防护等级
     private String use;//用途
     private String structureFrom;//结构形式
+    private Set<KV35> kv35Set = new HashSet<KV35>();
 
-    public SwitchCabinet() {
-    }
-
+    @Id
+    @Column(name = "high_switch_cabinet_id")
     public int getId() {
         return id;
     }
@@ -96,5 +102,14 @@ public class SwitchCabinet {
 
     public void setStructureFrom(String structureFrom) {
         this.structureFrom = structureFrom;
+    }
+
+    @OneToMany(mappedBy = "highSwitchCabinet",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    public Set<KV35> getKv35Set() {
+        return kv35Set;
+    }
+
+    public void setKv35Set(Set<KV35> kv35Set) {
+        this.kv35Set = kv35Set;
     }
 }

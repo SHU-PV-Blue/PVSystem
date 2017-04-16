@@ -1,9 +1,15 @@
 package com.shupv.entity;
 
+import javax.persistence.*;
+import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * Created by chengs on 17-4-5.
  */
-public class StepUpTransformer {
+@Entity
+public class StepUpTransformer implements Serializable {
     private int id;
     private String deviceName;//产品名
     private int size;//类型
@@ -16,8 +22,12 @@ public class StepUpTransformer {
     private String highPressureBranchRange;//高压分接范围,这是一个范围
     private int linkedGroupId;//联结组标号
     private double noloadLoss;//空载损耗（W）
+    private Set<KV10> kv10Set = new HashSet<KV10>();
+    private Set<KV35> kv35Set = new HashSet<KV35>();
     public StepUpTransformer(){}
 
+    @Id
+    @Column(name = "step_up_transformer_id")
     public int getId() {
         return id;
     }
@@ -112,5 +122,22 @@ public class StepUpTransformer {
 
     public void setNoloadLoss(double noloadLoss) {
         this.noloadLoss = noloadLoss;
+    }
+
+    @OneToMany(mappedBy = "stepUpTransformer",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    public Set<KV10> getKv10Set() {
+        return kv10Set;
+    }
+
+    public void setKv10Set(Set<KV10> kv10Set) {
+        this.kv10Set = kv10Set;
+    }
+    @OneToMany(mappedBy = "stepUpTransformer",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    public Set<KV35> getKv35Set() {
+        return kv35Set;
+    }
+
+    public void setKv35Set(Set<KV35> kv35Set) {
+        this.kv35Set = kv35Set;
     }
 }

@@ -1,28 +1,41 @@
 package com.shupv.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Created by Dell on 2017/4/4.
  */
 
-// 在@Table注释的name属性中添加对应数据库中表的名称
 
 // 直流汇流箱
-public class DCBus {
+@Entity
+public class DCBus implements Serializable {
     private int id;
-    private String manufacturersName;
-    private String model;
-    private int numOfInputs;
-    private int inputCurrentLimit;
+    private String manufacturersName;//厂家
+    private String model;//型号
+    private int numOfInputs;//输入路数
+    private int inputCurrentLimit;//输入电流上限
     private boolean haveDCCB;  // DCCB(DC Circuit Breaker, 直流断路器)
     private boolean haveLPM;  // LPM(Lightning Protection Monitoring, 防雷失效监控)
-    private boolean haveMonitoringUnit;
-    private boolean haveAuxiliaryPower;
+    private boolean haveMonitoringUnit;//MonitoringUnit 监控单元
+    private boolean haveAuxiliaryPower;//AuxiliaryPower 辅助电源
+    private Set<CentralizedTransform> centralizedTransformSet
+            = new HashSet<CentralizedTransform>();
 
+    @OneToMany(mappedBy = "dcBus",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    public Set<CentralizedTransform> getCentralizedTransformSet() {
+        return centralizedTransformSet;
+    }
 
+    public void setCentralizedTransformSet(Set<CentralizedTransform> centralizedTransformSet) {
+        this.centralizedTransformSet = centralizedTransformSet;
+    }
+
+    @Id
+    @Column(name = "dcbus_id")
     public int getId() {
         return id;
     }

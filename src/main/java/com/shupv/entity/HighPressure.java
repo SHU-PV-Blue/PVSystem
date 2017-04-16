@@ -1,5 +1,7 @@
 package com.shupv.entity;
 
+import java.io.Serializable;
+
 /**
  * Created by chengs on 17-4-5.
  */

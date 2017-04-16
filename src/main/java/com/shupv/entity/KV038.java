@@ -1,13 +1,31 @@
 package com.shupv.entity;
 
+import javax.persistence.*;
+import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * Created by chengs on 17-4-5.
  */
-public class KV038 implements HighPressure {
+@Entity
+public class KV038 implements HighPressure,Serializable {
     private int id;
-    private SwitchCabinet switchCabinet;//开关柜编号
-    public KV038(){}
+    private LowSwitchCabinet lowSwitchCabinet;//开关柜编号
+    private Set<HighPressureDevice> highPressureDevices
+            = new HashSet<HighPressureDevice>();
 
+    @OneToMany(mappedBy = "kv038",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    public Set<HighPressureDevice> getHighPressureDevices() {
+        return highPressureDevices;
+    }
+
+    public void setHighPressureDevices(Set<HighPressureDevice> highPressureDevices) {
+        this.highPressureDevices = highPressureDevices;
+    }
+
+    @Id
+    @Column(name = "kv038_id")
     public int getId() {
         return id;
     }
@@ -15,12 +33,13 @@ public class KV038 implements HighPressure {
     public void setId(int id) {
         this.id = id;
     }
-
-    public SwitchCabinet getSwitchCabinet() {
-        return switchCabinet;
+    @ManyToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    @JoinColumn(name = "low_switch_cabinet_id")
+    public LowSwitchCabinet getLowSwitchCabinet() {
+        return lowSwitchCabinet;
     }
 
-    public void setSwitchCabinet(SwitchCabinet switchCabinet) {
-        this.switchCabinet = switchCabinet;
+    public void setLowSwitchCabinet(LowSwitchCabinet lowSwitchCabinet) {
+        this.lowSwitchCabinet = lowSwitchCabinet;
     }
 }

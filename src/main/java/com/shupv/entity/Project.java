@@ -1,11 +1,14 @@
 package com.shupv.entity;
 
+import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Date;
 
 /**
  * Created by cc on 17-4-4.
  */
-public class Project {
+@Entity
+public class Project implements Serializable {
     private int projectId;
     private String projectName;
     private PVPanel pvPanel;
@@ -17,7 +20,19 @@ public class Project {
     private String site;//拟建地点
     private Date buildDate;//建设时间
     private String comment;//备注
+    private User user;
 
+    @ManyToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    @JoinColumn(name = "userId")
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    @Id
     public int getProjectId() {
         return projectId;
     }
@@ -34,6 +49,8 @@ public class Project {
         this.projectName = projectName;
     }
 
+    @ManyToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    @JoinColumn(name = "PVPId")
     public PVPanel getPvPanel() {
         return pvPanel;
     }
@@ -58,6 +75,8 @@ public class Project {
         this.col = col;
     }
 
+    @ManyToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    @JoinColumn(name = "climaticId")
     public ClimaticData getClimaticData() {
         return climaticData;
     }
@@ -66,6 +85,8 @@ public class Project {
         this.climaticData = climaticData;
     }
 
+    @ManyToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    @JoinColumn(name = "high_pressure_device_id")
     public LowPressureDevice getLowPressureDevice() {
         return lowPressureDevice;
     }
@@ -74,6 +95,8 @@ public class Project {
         this.lowPressureDevice = lowPressureDevice;
     }
 
+    @ManyToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    @JoinColumn(name = "lowPressureDeviceId")
     public HighPressureDevice getHighPressureDevice() {
         return highPressureDevice;
     }

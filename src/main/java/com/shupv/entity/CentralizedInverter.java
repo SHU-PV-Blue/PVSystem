@@ -1,30 +1,35 @@
 package com.shupv.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Created by Dell on 2017/4/4.
  */
-// 在@Table注释的name属性中添加对应数据库中表的名称// 集中式逆变器
+// 集中式逆变器
+@Entity
 public class CentralizedInverter implements Serializable{
     private int id;
-    private String manufacturersName;
-    private String model;
-    private int maxDCInputPower;
-    private int maxInputVoltage;
-    private int startVoltage;
+    private String manufacturersName;//厂家
+    private String model;//型号
+    private int maxDCInputPower;//最大直流输入功率
+    private int maxInputVoltage;//启动电压
+    private int startVoltage;//最大效率
     private int mppLVL;  // LVL(Lower Voltage Limit, 电压下限)
     private int mppVL;  // VL(Voltage Limit, 电压上限)
-    private int maxDCInputCurrent;
-    private int ratedACOutputPower;
-    private int maxOutputPower;
-    private int maxACOutputCurrent;
-    private int ratedGridVoltage;
-    private double maxEfficiency;
+    private int maxDCInputCurrent; //最大直流输入电流
+    private int ratedACOutputPower;//额定交流输出功率
+    private int maxOutputPower;//最大输出功率
+    private int maxACOutputCurrent;//最大交流输出电流
+    private int ratedGridVoltage;//最大交流输出电流
+    private double maxEfficiency;//最大效率
+    private Set<CentralizedTransform> centralizedTransformSet
+            = new HashSet<CentralizedTransform>();
 
+    @Id
+    @Column(name = "centralized_inverter_id")
     public int getId() {
         return id;
     }
@@ -47,6 +52,15 @@ public class CentralizedInverter implements Serializable{
 
     public void setModel(String model) {
         this.model = model;
+    }
+
+    @OneToMany(mappedBy = "centralizedInverter",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    public Set<CentralizedTransform> getCentralizedTransformSet() {
+        return centralizedTransformSet;
+    }
+
+    public void setCentralizedTransformSet(Set<CentralizedTransform> centralizedTransformSet) {
+        this.centralizedTransformSet = centralizedTransformSet;
     }
 
     public int getMaxDCInputPower() {

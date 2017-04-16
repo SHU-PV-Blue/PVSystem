@@ -1,18 +1,23 @@
 package com.shupv.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 
- // 在@Table注释的name属性中添加对应数据库中表的名称// 集中式变压器
-public class CentralizedTransform implements Transformer,Serializable{
+// 集中式变压器
+@Entity
+public class CentralizedTransform implements Transformer, Serializable {
     private int id;
-    private CentralizedInverter centralizedInverter;
-    private DCBus dcBus;
-    private Cable cable;
-    private DCBox dcBox;
+    private CentralizedInverter centralizedInverter;//集中式逆变器
+    private DCBus dcBus;//直流汇流箱
+    private Cable cable;//电缆
+    private DCBox dcBox;//直流配电柜
+    private Set<LowPressureDevice> lowPressureDeviceSet
+            = new HashSet<LowPressureDevice>();
 
+    @Id
+    @Column(name = "centralized_transform_id")
     public int getId() {
         return id;
     }
@@ -21,6 +26,8 @@ public class CentralizedTransform implements Transformer,Serializable{
         this.id = id;
     }
 
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinColumn(name = "centralized_inverter_id")
     public CentralizedInverter getCentralizedInverter() {
         return centralizedInverter;
     }
@@ -29,6 +36,8 @@ public class CentralizedTransform implements Transformer,Serializable{
         this.centralizedInverter = centralizedInverter;
     }
 
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinColumn(name = "dcbus_id")
     public DCBus getDcBus() {
         return dcBus;
     }
@@ -37,6 +46,8 @@ public class CentralizedTransform implements Transformer,Serializable{
         this.dcBus = dcBus;
     }
 
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinColumn(name = "cable_id")
     public Cable getCable() {
         return cable;
     }
@@ -45,11 +56,22 @@ public class CentralizedTransform implements Transformer,Serializable{
         this.cable = cable;
     }
 
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinColumn(name = "dcbox_id")
     public DCBox getDcBox() {
         return dcBox;
     }
 
     public void setDcBox(DCBox dcBox) {
         this.dcBox = dcBox;
+    }
+
+    @OneToMany(mappedBy = "centralizedTransform",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    public Set<LowPressureDevice> getLowPressureDeviceSet() {
+        return lowPressureDeviceSet;
+    }
+
+    public void setLowPressureDeviceSet(Set<LowPressureDevice> lowPressureDeviceSet) {
+        this.lowPressureDeviceSet = lowPressureDeviceSet;
     }
 }

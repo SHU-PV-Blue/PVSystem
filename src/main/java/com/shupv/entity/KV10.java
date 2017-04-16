@@ -1,15 +1,32 @@
 package com.shupv.entity;
 
+import javax.persistence.*;
+import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * Created by chengs on 17-4-5.
  */
-public class KV10 implements HighPressure {
+@Entity
+public class KV10 implements HighPressure,Serializable {
     private int id;
-    private SwitchCabinet lowSwitchCabinet;//低压开关柜编号
-    private SwitchCabinet highSwitchCabinet;//高压开关柜编号
+    private LowSwitchCabinet lowSwitchCabinet;//低压开关柜编号
     private StepUpTransformer stepUpTransformer;//升压变压器编号
-    public KV10(){}
+    private Set<HighPressureDevice> highPressureDevices
+            = new HashSet<HighPressureDevice>();
 
+    @OneToMany(mappedBy = "kv10",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    public Set<HighPressureDevice> getHighPressureDevices() {
+        return highPressureDevices;
+    }
+
+    public void setHighPressureDevices(Set<HighPressureDevice> highPressureDevices) {
+        this.highPressureDevices = highPressureDevices;
+    }
+
+    @Id
+    @Column(name = "kv10_id")
     public int getId() {
         return id;
     }
@@ -18,22 +35,18 @@ public class KV10 implements HighPressure {
         this.id = id;
     }
 
-    public SwitchCabinet getLowSwitchCabinet() {
+    @ManyToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    @JoinColumn(name = "low_switch_cabinet_id")
+    public LowSwitchCabinet getLowSwitchCabinet() {
         return lowSwitchCabinet;
     }
 
-    public void setLowSwitchCabinet(SwitchCabinet lowSwitchCabinet) {
+    public void setLowSwitchCabinet(LowSwitchCabinet lowSwitchCabinet) {
         this.lowSwitchCabinet = lowSwitchCabinet;
     }
 
-    public SwitchCabinet getHighSwitchCabinet() {
-        return highSwitchCabinet;
-    }
-
-    public void setHighSwitchCabinet(SwitchCabinet highSwitchCabinet) {
-        this.highSwitchCabinet = highSwitchCabinet;
-    }
-
+    @ManyToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    @JoinColumn(name = "step_up_transformer_id")
     public StepUpTransformer getStepUpTransformer() {
         return stepUpTransformer;
     }

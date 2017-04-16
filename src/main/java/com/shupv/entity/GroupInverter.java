@@ -1,33 +1,46 @@
 package com.shupv.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Created by Dell on 2017/4/5.
  */
 
-// 在@Table注释的name属性中添加对应数据库中表的名称
-
 // 组串式逆变器
-public class GroupInverter {
+@Entity
+public class GroupInverter implements Serializable {
     private int id;
-    private String manufacturersName;
-    private String model;
-    private int maxInputPower;
-    private int maxInputVoltage;
-    private int ratedInputVoltage;
+    private String manufacturersName;//厂家
+    private String model;//型号
+    private int maxInputPower;//最大输入功率
+    private int maxInputVoltage;//最大输入电压
+    private int ratedInputVoltage;//额定输入电压
     private int mppLVL;  // LVL(Lower Voltage Limit, 电压下限)
     private int mppVL;  // VL(Voltage Limit, 电压上限)
-    private int numOfMPPT;
-    private double maxInputCurrent;
-    private double maxAllowedInputCurrent;
-    private int ratedOutputPower;
-    private int maxOutputPower;
-    private double maxOutputCurrent;
-    private double maxEfficiency;
+    private int numOfMPPT;//MPPT数量
+    private double maxInputCurrent;//最大输入电流
+    private double maxAllowedInputCurrent;//输入端子最大允许电流
+    private int ratedOutputPower;//额定输出功率
+    private int maxOutputPower;//最大输出功率
+    private double maxOutputCurrent;//最大输出电流
+    private double maxEfficiency;//最大效率
+    private Set<GroupTransformer> groupTransformerSet
+            = new HashSet<GroupTransformer>();
 
+    @OneToMany(mappedBy = "groupInverter",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    public Set<GroupTransformer> getGroupTransformerSet() {
+        return groupTransformerSet;
+    }
+
+    public void setGroupTransformerSet(Set<GroupTransformer> groupTransformerSet) {
+        this.groupTransformerSet = groupTransformerSet;
+    }
+
+    @Id
+    @Column(name = "group_inverter_id")
     public int getId() {
         return id;
     }
