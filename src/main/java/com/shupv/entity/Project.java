@@ -6,6 +6,18 @@ import java.util.Date;
  * Created by cc on 17-4-4.
  */
 public class Project {
+    private int projectId;
+    private String projectName;
+    private PVPanel pvPanel;
+    private int row;//光伏电板行数
+    private int col;//光伏电板列数
+    private ClimaticData climaticData;//气象数据
+    private LowPressureDevice lowPressureDevice;//低压侧设备
+    private HighPressureDevice highPressureDevice;//高压侧设备
+    private String site;//拟建地点
+    private Date buildDate;//建设时间
+    private String comment;//备注
+
     public int getProjectId() {
         return projectId;
     }
@@ -30,19 +42,19 @@ public class Project {
         this.pvPanel = pvPanel;
     }
 
-    public PVPanel getRow() {
+    public int getRow() {
         return row;
     }
 
-    public void setRow(PVPanel row) {
+    public void setRow(int row) {
         this.row = row;
     }
 
-    public PVPanel getCol() {
+    public int getCol() {
         return col;
     }
 
-    public void setCol(PVPanel col) {
+    public void setCol(int col) {
         this.col = col;
     }
 
@@ -93,16 +105,4 @@ public class Project {
     public void setComment(String comment) {
         this.comment = comment;
     }
-
-    private int projectId;
-    private String projectName;
-    private PVPanel pvPanel;
-    private int row;//光伏电板行数
-    private int col;//光伏电板列数
-    private ClimaticData climaticData;//气象数据
-    private LowPressureDevice lowPressureDevice;//低压侧设备
-    private HighPressureDevice highPressureDevice;//高压侧设备
-    private String site;//拟建地点
-    private Date buildDate;//建设时间
-    private String comment;//备注
 }

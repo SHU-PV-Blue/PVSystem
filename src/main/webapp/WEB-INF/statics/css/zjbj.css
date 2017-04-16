@@ -1,0 +1,28 @@
+ .juzhong{
+  text-align: center;
+  line-height: 50px;
+}
+body{
+  padding-bottom: 70px;
+}
+td,th{
+  padding: 5px;
+}
+.aa{
+  width: 20% !important;
+  margin: 20px auto !important; 
+}
+input[type="text"]{
+	width: 50px;
+	height:30px;
+}
+#rong{
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+.hide{
+  display: none;
+}
+.show{
+  display: block;
+}

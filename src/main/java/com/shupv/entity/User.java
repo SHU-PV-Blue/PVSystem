@@ -1,9 +1,13 @@
 package com.shupv.entity;
 
+import javax.persistence.*;
+import java.io.Serializable;
+
 /**
  * Created by zihua on 17-3-29.
  */
-public class User {
+@Entity
+public class User implements Serializable{
     private int userId;//用户的id
     private String userName;
     private String password;
@@ -12,6 +16,7 @@ public class User {
     private String name;
     private String mail;
 
+    @Id
     public int getUserId() {
         return userId;
     }
@@ -44,6 +49,8 @@ public class User {
         this.phoneNumber = phoneNumber;
     }
 
+    @ManyToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    @JoinColumn(name = "roleId")
     public Role getRole() {
         return role;
     }

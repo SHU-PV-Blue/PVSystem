@@ -3,19 +3,16 @@ package com.shupv.entity;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.io.Serializable;
 
-@Entity
-// 在@Table注释的name属性中添加对应数据库中表的名称
-@Table
-// 集中式变压器
-public class CentralizedTransform implements Transformer{
+ // 在@Table注释的name属性中添加对应数据库中表的名称// 集中式变压器
+public class CentralizedTransform implements Transformer,Serializable{
     private int id;
     private CentralizedInverter centralizedInverter;
     private DCBus dcBus;
     private Cable cable;
     private DCBox dcBox;
 
-    @Id
     public int getId() {
         return id;
     }

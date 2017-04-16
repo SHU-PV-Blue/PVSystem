@@ -1,0 +1,213 @@
+window.onload=function(){
+var mychart1=echarts.init(document.getElementById("mychart1"));
+      mychart1.setOption({
+            title:{
+                  text:"年总幅照度",
+                   x:'center',
+                 textStyle:{
+                  fontWeight:"normal"
+                 },
+                 left:"220px"
+            },
+            tooltip:{},
+            legend:{
+                  show:false
+            },
+            xAxis:[{
+                  type:"value",
+                  name:"倾角/度",
+                  min:0,
+                  max:90,
+                  interval:5
+            }],
+
+            yAxis:[{
+                  type:"value",
+                  name:"辐照度/kWh/㎡",
+                  min:"dataMin",//怎么处理为整数
+                  max:"dataMax"
+            }],
+            series:[{
+                  type:"line",
+                  smooth:true,
+                  color:["#8F8FBD"],
+                  areaStyle:{
+                        normal:{
+                        color:"#8F8FBD"
+                  }
+            },
+            data:[[0,1391.71],
+                  [1,1400.86],
+                  [5,1437.688],
+                  [10,1468.288],
+                  [15,1495.015],
+                  [25,1524.445],
+                  [30,1526.827],
+                  [35,1520.931],
+                  [40,1506.805],
+                  [45,1484.565],
+                  [50,1454.399],
+                  [55,1416.566],
+                  [60,1371.398],
+                  [65,1319.301],
+                  [70,1260.761],
+                  [75,1198.356],
+                  [80,1126.783],
+                  [85,1052.901],
+                  [90,975.862]
+
+            ]
+            }]
+      });
+//第一个
+var mychart2=echarts.init(document.getElementById("mychart2"));
+      mychart2.setOption({
+            title:{
+                  text:"组件年输出电量",
+                 // textAlign:"center"
+                 textStyle:{
+                  fontWeight:"normal"
+                 },
+                 left:"220px"
+            },
+            tooltip:{},
+            legend:{
+                  show:false
+            },
+            xAxis:[{
+                  type:"value",
+                  name:"倾角/度",
+                  min:0,
+                  max:90,
+                  interval:5
+            }],
+
+            yAxis:[{
+                  type:"value",
+                  name:"电量/kWh",
+                  min:"dataMin",//怎么处理为整数
+                  max:"dataMax"
+            }],
+            series:[{
+                  type:"line",
+                  smooth:true,
+                  color:["#8F8FBD"],
+                  areaStyle:{
+                        normal:{
+                        color:"#8F8FBD"
+                  }
+            },
+            data:[[0,374.71],
+                  //[1,1400.86],
+                  [5,386.688],
+                  [10,398.288],
+                  [15,403.015],
+                  [25,411.445],
+                  [30,412.827],
+                  //[35,1520.931],
+                  [40,409.805],
+                 // [45,1484.565],
+                 // [50,.399],
+                  [55,385.566],
+                  //[60,1371.398],
+                  [65,359.301],
+                  [70,344.761],
+                  [75,327.356],
+                  [80,309.783],
+                  [85,289.901],
+                  [90,268.862]
+
+            ]
+            }]
+      });
+//第二个
+  var mychart3=echarts.init(document.getElementById("mychart3"));
+      mychart3.setOption({
+            title:{
+                  text:"月总辐照度",
+                 // textAlign:"center"
+                 textStyle:{
+                  fontWeight:"normal"
+                 },
+                 left:"220px"
+            },
+            tooltip:{},
+            legend:{
+                  show:false
+            },
+            xAxis:[{
+                  type:"category",
+                  name:"月份",
+                  data:[1,2,3,4,5,6,7,8,9,10,11,12]
+            }],
+
+            yAxis:[{
+                  type:"value",
+                  name:"辐照度/kWh/㎡",
+                  min:"dataMin",
+                  max:"dataMax"
+            }],
+            series:[{
+                  type:"line",
+                  smooth:true,
+                 /* lineStyle:{
+                        noamal:{
+                              color:"#8F8FBD"
+                        }
+                  },*/
+                  color:["#8F8FBD"],
+                  areaStyle:{
+                        normal:{
+                        color:"#8F8FBD"
+                  }
+            },
+            data:[23.4,24.6,30.6,34.96,39.9,36.0,41.15,38.21,32.12,28,23,22.7]
+            }]
+      });
+//第三个
+      var mychart4=echarts.init(document.getElementById("mychart4"));
+      mychart4.setOption({
+            title:{
+                  text:"月总组件输出电量",
+                 // textAlign:"center"
+                 textStyle:{
+                  fontWeight:"normal"
+                 },
+                 left:"220px"
+            },
+            tooltip:{},
+            legend:{
+                  show:false
+            },
+            xAxis:[{
+                  type:"category",
+                  name:"月份",
+                  data:[1,2,3,4,5,6,7,8,9,10,11,12]
+            }],
+
+            yAxis:[{
+                  type:"value",
+                  name:"辐照度/kWh/㎡",
+                  min:"dataMin",
+                  max:"dataMax"
+            }],
+            series:[{
+                  type:"line",
+                  smooth:true,
+                 /* lineStyle:{
+                        noamal:{
+                              color:"#8F8FBD"
+                        }
+                  },*/
+                  color:["#8F8FBD"],
+                  areaStyle:{
+                        normal:{
+                        color:"#8F8FBD"
+                  }
+            },
+            data:[34,31,34,34.7,36.7,31.9,36.8,36.6,34.2,34.4,32.9,34.9]
+            }]
+      });
+
+
+}

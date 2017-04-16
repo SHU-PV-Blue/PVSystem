@@ -15,7 +15,8 @@ public class SwitchCabinet {
     private String use;//用途
     private String structureFrom;//结构形式
 
-    public SwitchCabinet(){}
+    public SwitchCabinet() {
+    }
 
     public int getId() {
         return id;

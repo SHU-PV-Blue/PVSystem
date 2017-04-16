@@ -7,9 +7,9 @@ import javax.persistence.Table;
 /**
  * Created by Dell on 2017/4/4.
  */
-@Entity
+
 // 在@Table注释的name属性中添加对应数据库中表的名称
-@Table
+
 // 直流汇流箱
 public class DCBus {
     private int id;
@@ -22,7 +22,7 @@ public class DCBus {
     private boolean haveMonitoringUnit;
     private boolean haveAuxiliaryPower;
 
-    @Id
+
     public int getId() {
         return id;
     }

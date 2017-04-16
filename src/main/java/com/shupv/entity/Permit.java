@@ -1,22 +1,27 @@
 package com.shupv.entity;
 
+import javax.persistence.*;
+import java.io.Serializable;
+import java.util.HashSet;
 import java.util.Set;
 
 /**
  * Created by cc on 17-4-4.
  */
-public class Permit {
-    private int PermitNum; //权限编号
+@Entity
+public class Permit implements Serializable{
+    private int permitId; //权限编号
     private String permitName;
     private String url;
-    private Set<Role> role;//角色集
+    private Set<Role> role = new HashSet<Role>();//角色集
 
-    public int getPermitNum() {
-        return PermitNum;
+    @Id
+    public int getPermitId() {
+        return permitId;
     }
 
-    public void setPermitNum(int permitNum) {
-        PermitNum = permitNum;
+    public void setPermitId(int permitId) {
+        permitId = permitId;
     }
 
     public String getPermitName() {
@@ -35,6 +40,7 @@ public class Permit {
         this.url = url;
     }
 
+    @ManyToMany(mappedBy = "permit",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
     public Set<Role> getRole() {
         return role;
     }

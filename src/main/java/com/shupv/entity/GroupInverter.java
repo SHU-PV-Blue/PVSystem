@@ -7,9 +7,9 @@ import javax.persistence.Table;
 /**
  * Created by Dell on 2017/4/5.
  */
-@Entity
+
 // 在@Table注释的name属性中添加对应数据库中表的名称
-@Table
+
 // 组串式逆变器
 public class GroupInverter {
     private int id;
@@ -28,7 +28,6 @@ public class GroupInverter {
     private double maxOutputCurrent;
     private double maxEfficiency;
 
-    @Id
     public int getId() {
         return id;
     }
