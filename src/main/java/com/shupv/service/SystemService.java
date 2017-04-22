@@ -107,11 +107,12 @@ public class SystemService {
             JSONObject jsonObject = new JSONObject();
             jsonObject.put("projectName", nullCheck(i.getProjectName()));
             jsonObject.put("buildDate", nullCheck(i.getBuildDate()));
+            jsonObject.put("comment",nullCheck(i.getComment()));
             jsonArray.put(jsonObject);
         }
         return jsonArray.toString();
     }
-    
+
     public  String updateProject(String projectId){
         return projectDao.updateProject(projectId).toString();
     }

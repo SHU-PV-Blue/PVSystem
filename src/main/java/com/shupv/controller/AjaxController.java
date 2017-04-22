@@ -17,7 +17,7 @@ public class AjaxController {
     @Autowired
     private SystemService systemService;
 
-    @RequestMapping(value = "/home", produces = "text/html;charset=utf-8")
+    @RequestMapping(value = "/userInfo", produces = "text/html;charset=utf-8")
     @ResponseBody
     public String getRoleAndNickname(@CookieValue("pvsystemCookie") String userId) {
         return systemService.getNicknameAndRolenameByUserId(userId);

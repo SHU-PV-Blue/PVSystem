@@ -1,0 +1,48 @@
+2017/4/22 所完成的API说明
+格式：
+编号
+链接
+
+参数说明
+
+返回说明
+
+
+1.
+localhost:8080//ajax/userInfo
+
+无（使用cookie中的userId）
+
+返回该用户的角色名和昵称 如：{"nickname":"管理员","roleName":"admin"}
+
+
+2.
+localhost:8080//ajax/project
+
+无（使用cookie中的userId）
+
+返回该用户所创项目的JSONArray，属性为项目名，创建日期，项目描述
+如：[{"comment":"","buildDate":"2017-04-22 22:17:12.0","projectName":""},{"comment":"","buildDate":"2017-04-22 22:14:15.0","projectName":""}]
+
+3.
+localhost:8080//login
+
+参数为用户名和密码如：{'userId':value,'password':value}
+
+登录界面，通过用户名和密码验证该用户是否存在，存在则进入localhost:8080//home，
+不存在则留在当前页面（注：response中返回名称为pvsystemCookie的cookie，其中保存着userId）
+
+4.
+localhost:8080//register/checkUser
+
+参数为用户名如：{'userId':value}
+
+注册用户时通过用户名验证该用户是否存在，如：{"success":false}
+
+5.
+localhost:8080//register/register
+
+参数为用户名，密码，昵称如：{'id':value, 'password':value, 'nickname':value}
+
+注册页面，注册成功进入localhost:8080//home，并返回名称为pvsystemCookie的cookie，
+其中保存userId，失败时停留在该页面
