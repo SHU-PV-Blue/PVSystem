@@ -4,6 +4,7 @@ package com.shupv.service;
  * Created by zihua on 17-4-16.
  */
 
+import com.shupv.dao.ProjectDao;
 import com.shupv.dao.RoleDao;
 import com.shupv.dao.UserDao;
 import com.shupv.entity.User;
@@ -20,6 +21,9 @@ public class SystemService {
     private UserDao userDao;
     @Autowired
     private RoleDao roleDao;
+
+    @Autowired
+    private ProjectDao projectDao;
 
     public boolean checkUserByIdAndPwd(String id, String password) {
         password = SecurityTools.md5(password);
@@ -45,6 +49,10 @@ public class SystemService {
         user.setName(nickname);
         return userDao.insert(user);
 
+    }
+
+    public  String createProject(String userId){
+        return projectDao.createProject(userId).toString();
     }
 
 }
