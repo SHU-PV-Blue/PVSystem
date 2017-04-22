@@ -43,7 +43,7 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <h2>欢迎登录</h2>
-            <p class="right">还没有账号？<a href="/home/regiser">立即注册</a>
+            <p class="right">还没有账号？<a href="/register">立即注册</a>
             <p>
             <form class="form-horizontal" role="form" action="/login">
                 <div class="form-group">
@@ -55,7 +55,8 @@
                 <div class="form-group">
                     <label for="inputPassword3" class="col-sm-2 control-label">密码</label>
                     <div class="col-sm-10">
-                        <input type="password" name="password" class="form-control" id="inputPassword3" placeholder="密码">
+                        <input type="password" name="password" class="form-control" id="inputPassword3"
+                               placeholder="密码">
                     </div>
                 </div>
                 <div class="form-group">

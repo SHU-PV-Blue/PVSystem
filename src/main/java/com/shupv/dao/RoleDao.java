@@ -12,8 +12,8 @@ public class RoleDao extends BaseDao {
     public JSONObject getRoleById(String id){
         Role role = this.getSession().get(Role.class, id);
         JSONObject jsonObject = new JSONObject();
-        jsonObject.put("roleId", role.getRoleId());
-        jsonObject.put("roleName", role.getRoleName());
+        jsonObject.put("roleId", nullCheck(role.getRoleId()));
+        jsonObject.put("roleName", nullCheck(role.getRoleName()));
         return jsonObject;
     }
 }

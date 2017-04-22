@@ -19,11 +19,11 @@ public class LoginController {
     private SystemService systemService;
 
     @RequestMapping(value = "")
-    public String loginCheck(@RequestParam Integer userId, String password,
+    public String loginCheck(@RequestParam String userId, String password,
                              HttpServletResponse response) {
-        boolean isOk = systemService.checkUser(userId, password);
+        boolean isOk = systemService.checkUserByIdAndPwd(userId, password);
         if (isOk){
-            Cookie cookie = new Cookie("cookie", userId.toString());
+            Cookie cookie = new Cookie("id", userId);
             cookie.setMaxAge(60*60*24*3);
             response.addCookie(cookie);
             return "redirect:/home";
