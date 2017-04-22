@@ -1,5 +1,6 @@
 package com.shupv.dao;
 
+import com.shupv.entity.Project;
 import com.shupv.entity.User;
 import org.json.JSONObject;
 import org.springframework.stereotype.Repository;
@@ -7,6 +8,7 @@ import org.springframework.stereotype.Repository;
 import javax.annotation.Resources;
 import java.io.IOException;
 import java.util.List;
+import java.util.Set;
 
 import static com.shupv.tools.SecurityTools.nullCheck;
 
@@ -43,6 +45,10 @@ public class UserDao extends BaseDao {
         }catch (Exception e){
             return false;
         }
+    }
+
+    public Set<Project> getProjectsById(String userId){
+        return this.getUserById(userId).getProjectSet();
     }
 
 }
