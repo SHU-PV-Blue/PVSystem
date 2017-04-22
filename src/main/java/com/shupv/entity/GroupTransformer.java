@@ -20,6 +20,7 @@ public class GroupTransformer implements Transformer,Serializable {
 
     @Id
     @Column(name = "group_transformer_id")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     public int getId() {
         return id;
     }

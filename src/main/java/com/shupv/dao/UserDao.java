@@ -8,6 +8,8 @@ import javax.annotation.Resources;
 import java.io.IOException;
 import java.util.List;
 
+import static com.shupv.tools.SecurityTools.nullCheck;
+
 /**
  * Created by Dell on 2017/4/22.
  */

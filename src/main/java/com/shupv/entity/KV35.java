@@ -28,6 +28,7 @@ public class KV35 implements Serializable {
 
     @Id
     @Column(name = "kv35_id")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     public int getId() {
         return id;
     }

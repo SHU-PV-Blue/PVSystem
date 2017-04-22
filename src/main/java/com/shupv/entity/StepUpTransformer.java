@@ -28,6 +28,7 @@ public class StepUpTransformer implements Serializable {
 
     @Id
     @Column(name = "step_up_transformer_id")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     public int getId() {
         return id;
     }

@@ -30,6 +30,7 @@ public class HighPressureDevice implements Serializable {
 
     @Id
     @Column(name = "high_pressure_device_id")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     public int getId() {
         return id;
     }

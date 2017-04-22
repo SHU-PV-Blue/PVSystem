@@ -41,6 +41,7 @@ public class GroupInverter implements Serializable {
 
     @Id
     @Column(name = "group_inverter_id")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     public int getId() {
         return id;
     }

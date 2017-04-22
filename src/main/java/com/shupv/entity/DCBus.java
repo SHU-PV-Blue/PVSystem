@@ -36,6 +36,7 @@ public class DCBus implements Serializable {
 
     @Id
     @Column(name = "dcbus_id")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     public int getId() {
         return id;
     }

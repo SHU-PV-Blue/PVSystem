@@ -18,7 +18,5 @@ public abstract class BaseDao {
         return sessionFactory.getCurrentSession();
     }
 
-    public Object nullCheck(Object o){
-        return o == null ? "" : o;
-    }
+
 }

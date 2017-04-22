@@ -30,6 +30,7 @@ public class ClimaticData implements Serializable{
     }
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     public int getClimaticId() {
         return climaticId;
     }

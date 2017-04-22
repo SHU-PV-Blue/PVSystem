@@ -34,6 +34,7 @@ public class LowPressureDevice implements Serializable {
     }
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     public int getLowPressureDeviceId() {
         return lowPressureDeviceId;
     }

@@ -40,6 +40,7 @@ public class PVPanel implements Serializable {
     }
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     public int getPVPId() {
         return PVPId;
     }

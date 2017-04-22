@@ -33,6 +33,7 @@ public class Project implements Serializable {
     }
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     public int getProjectId() {
         return projectId;
     }
