@@ -6,4 +6,5 @@ target
 .idea/kotlinc.xml
 .idea/misc.xml
 .idea/uiDesigner.xml
+.idea/libraries
 src/main/resources/jdbc.properties

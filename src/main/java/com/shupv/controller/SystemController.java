@@ -9,6 +9,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping(value = "home")
 public class SystemController {
+    @RequestMapping(value = "")
+    public String home(){
+        return "home";
+    }
     @RequestMapping(value = "/information")
     public String information() {
         return "information";

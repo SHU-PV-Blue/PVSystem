@@ -49,13 +49,13 @@
                 <div class="form-group">
                     <label for="inputEmail3" class="col-sm-2 control-label">用户名</label>
                     <div class="col-sm-10">
-                        <input type="email" class="form-control" id="inputEmail3" placeholder="用户名或手机号">
+                        <input type="text" name="userId" class="form-control" id="inputEmail3" placeholder="用户名或手机号">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="inputPassword3" class="col-sm-2 control-label">密码</label>
                     <div class="col-sm-10">
-                        <input type="password" class="form-control" id="inputPassword3" placeholder="密码">
+                        <input type="password" name="password" class="form-control" id="inputPassword3" placeholder="密码">
                     </div>
                 </div>
                 <div class="form-group">

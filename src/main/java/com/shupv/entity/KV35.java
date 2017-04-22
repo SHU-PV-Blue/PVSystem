@@ -9,7 +9,7 @@ import java.util.Set;
  * Created by chengs on 17-4-5.
  */
 @Entity
-public class KV35 implements HighPressure,Serializable {
+public class KV35 implements Serializable {
     private int id;
     private LowSwitchCabinet lowSwitchCabinet;//低压开关柜编号
     private HighSwitchCabinet highSwitchCabinet;//高压开关柜编号
@@ -47,7 +47,7 @@ public class KV35 implements HighPressure,Serializable {
     }
 
     @ManyToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
-    @JoinColumn(name = "high_switch_cabinet_id")
+    @JoinColumn(name = "highSwitchCabinetId")
     public HighSwitchCabinet getHighSwitchCabinet() {
         return highSwitchCabinet;
     }

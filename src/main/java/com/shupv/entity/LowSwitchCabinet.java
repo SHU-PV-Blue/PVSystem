@@ -18,7 +18,7 @@ public class LowSwitchCabinet implements Serializable {
     private double ratedVoltage;//额定电压/V
     private double ratedFrequency;//额定频率/Hz
     private int safeguardLevel;//防护等级
-    private String use;//用途
+    private String application;//用途
     private String structureFrom;//结构形式
     private Set<KV10> kv10Set = new HashSet<KV10>();
     private Set<KV35> kv35Set = new HashSet<KV35>();
@@ -32,6 +32,35 @@ public class LowSwitchCabinet implements Serializable {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+
+
+    @OneToMany(mappedBy = "lowSwitchCabinet",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    public Set<KV10> getKv10Set() {
+        return kv10Set;
+    }
+
+    public void setKv10Set(Set<KV10> kv10Set) {
+        this.kv10Set = kv10Set;
+    }
+
+    @OneToMany(mappedBy = "lowSwitchCabinet",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    public Set<KV35> getKv35Set() {
+        return kv35Set;
+    }
+
+    public void setKv35Set(Set<KV35> kv35Set) {
+        this.kv35Set = kv35Set;
+    }
+
+    @OneToMany(mappedBy = "lowSwitchCabinet",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    public Set<KV038> getKv038Set() {
+        return kv038Set;
+    }
+
+    public void setKv038Set(Set<KV038> kv038Set) {
+        this.kv038Set = kv038Set;
     }
 
     public String getBrand() {
@@ -90,12 +119,12 @@ public class LowSwitchCabinet implements Serializable {
         this.safeguardLevel = safeguardLevel;
     }
 
-    public String getUse() {
-        return use;
+    public String getApplication() {
+        return application;
     }
 
-    public void setUse(String use) {
-        this.use = use;
+    public void setApplication(String application) {
+        this.application = application;
     }
 
     public String getStructureFrom() {
@@ -104,32 +133,5 @@ public class LowSwitchCabinet implements Serializable {
 
     public void setStructureFrom(String structureFrom) {
         this.structureFrom = structureFrom;
-    }
-
-    @OneToMany(mappedBy = "lowSwitchCabinet",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
-    public Set<KV10> getKv10Set() {
-        return kv10Set;
-    }
-
-    public void setKv10Set(Set<KV10> kv10Set) {
-        this.kv10Set = kv10Set;
-    }
-
-    @OneToMany(mappedBy = "lowSwitchCabinet",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
-    public Set<KV35> getKv35Set() {
-        return kv35Set;
-    }
-
-    public void setKv35Set(Set<KV35> kv35Set) {
-        this.kv35Set = kv35Set;
-    }
-
-    @OneToMany(mappedBy = "lowSwitchCabinet",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
-    public Set<KV038> getKv038Set() {
-        return kv038Set;
-    }
-
-    public void setKv038Set(Set<KV038> kv038Set) {
-        this.kv038Set = kv038Set;
     }
 }
