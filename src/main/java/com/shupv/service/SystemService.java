@@ -87,5 +87,7 @@ public class SystemService {
     public  String createProject(String userId){
         return projectDao.createProject(userId).toString();
     }
-
+    public  String updateProject(String projectId){
+        return projectDao.updateProject(projectId).toString();
+    }
 }

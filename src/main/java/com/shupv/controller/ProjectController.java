@@ -23,4 +23,11 @@ public class ProjectController {
         String userId=cookieValue;
         return service.createProject(userId);
     }
+
+    @RequestMapping("/updateProjectBaseInfo")
+    @ResponseBody
+    public String createProject(@CookieValue("pvsystemCookie") String cookieValue,String BaseInfo){
+        String userId=cookieValue;
+        return service.createProject(userId);
+    }
 }
