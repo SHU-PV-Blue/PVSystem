@@ -23,7 +23,7 @@ public class LoginController {
                              HttpServletResponse response) {
         boolean isOk = systemService.checkUserByIdAndPwd(userId, password);
         if (isOk){
-            Cookie cookie = new Cookie("id", userId);
+            Cookie cookie = new Cookie("pvsystemCookie", userId);
             cookie.setMaxAge(60*60*24*3);
             response.addCookie(cookie);
             return "redirect:/home";
