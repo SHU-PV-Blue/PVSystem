@@ -93,6 +93,7 @@ public class SystemService {
         return projectDao.createProject(userId).toString();
     }
 
+
     /**
      * 通过userId查找该用户的所有创建过的项目
      * @param userId
@@ -109,6 +110,10 @@ public class SystemService {
             jsonArray.put(jsonObject);
         }
         return jsonArray.toString();
+    }
+    
+    public  String updateProject(String projectId){
+        return projectDao.updateProject(projectId).toString();
     }
 
 }
