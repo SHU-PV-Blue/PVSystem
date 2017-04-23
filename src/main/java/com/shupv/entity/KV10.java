@@ -27,6 +27,7 @@ public class KV10 implements HighPressure,Serializable {
 
     @Id
     @Column(name = "kv10_id")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     public int getId() {
         return id;
     }

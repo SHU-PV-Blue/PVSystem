@@ -43,7 +43,7 @@ public class RegisterController {
     @RequestMapping(value = "/register")
     public String register(@RequestParam String id, String password, String nickname, HttpServletResponse response){
         if (systemService.register(id, password, nickname)){
-            Cookie cookie = new Cookie("id",id);
+            Cookie cookie = new Cookie("pvsystemCookie",id);
             cookie.setMaxAge(60*60*24*3);
             response.addCookie(cookie);
             return "redirect:/home";

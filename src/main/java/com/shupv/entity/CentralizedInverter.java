@@ -30,6 +30,7 @@ public class CentralizedInverter implements Serializable{
 
     @Id
     @Column(name = "centralized_inverter_id")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     public int getId() {
         return id;
     }

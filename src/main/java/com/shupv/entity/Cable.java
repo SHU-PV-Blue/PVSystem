@@ -32,6 +32,7 @@ public class Cable implements Serializable{
 
     @Id
     @Column(name = "cable_id")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     public int getId() {
         return id;
     }

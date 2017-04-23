@@ -37,6 +37,8 @@ public class SecurityTools {
 
     public static Integer decoding(String t) {
         return Integer.valueOf(t.split("[@#$%!]+")[0]);
-
+    }
+    public static Object nullCheck(Object o){
+        return o == null ? "" : o;
     }
 }

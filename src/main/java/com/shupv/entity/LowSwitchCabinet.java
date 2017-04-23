@@ -26,6 +26,7 @@ public class LowSwitchCabinet implements Serializable {
 
     @Id
     @Column(name = "low_switch_cabinet_id")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     public int getId() {
         return id;
     }
