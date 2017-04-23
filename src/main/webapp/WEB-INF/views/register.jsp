@@ -31,6 +31,7 @@
                 <li class="active"><a href="/home/project">自定义设备</a></li>
                 <li><a href="#">我的项目</a></li>
                 <li><a href="#">新建项目</a></li>
+                <li><a href="#">当前用户</a></li>
                 <li><a href="#">当前项目:test</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -60,7 +61,7 @@
     <div class="form-group">
         <label for="userName" class="col-sm-2 control-label">昵称</label>
         <div class="col-sm-4">
-            <input type="text" class="form-control" id="userName">
+            <input type="text" class="form-control" name="userName"  id="userName">
         </div>
         <div class="col-sm-6">
             <p id="p2" class="pp">昵称不能为空</p>
@@ -69,7 +70,7 @@
     <div class="form-group">
         <label for="password" class="col-sm-2 control-label">密码</label>
         <div class="col-sm-4">
-            <input type="password" class="form-control" id="password">
+            <input type="password" class="form-control" id="password" name="password">
         </div>
         <div class="col-sm-6">
             <p id="p3" class="pp">密码字母加数字组合不能少于6位</p>
@@ -78,7 +79,7 @@
     <div class="form-group">
         <label for="input4" class="col-sm-2 control-label">确认密码</label>
         <div class="col-sm-4">
-            <input type="password" class="form-control" id="input4">
+            <input type="password" class="form-control" id="input4" disabled>
         </div>
         <div class="col-sm-6">
             <p id="p4" class="pp">密码输入不一致</p>
