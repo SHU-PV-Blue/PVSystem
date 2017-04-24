@@ -1,21 +1,31 @@
-.juzhong{
-  text-align: center;
-  line-height: 50px;
+.juzhong {
+    text-align: center;
+    line-height: 50px;
 }
-body{
 
-  padding-bottom: 70px;
+body {
+
+    padding-bottom: 70px;
 }
-.tp{
-  margin-top:70px;
+
+.tp {
+    margin-top: 70px;
 }
-.right{
-margin-left: 80%;
+
+.right {
+    margin-left: 80%;
 }
-.right a{
-  text-decoration: none;
+
+.right a {
+    text-decoration: none;
 }
-.forget{
-  text-decoration: none;
-  margin-left: 80%;
+
+.forget {
+    text-decoration: none;
+    margin-left: 80%;
 }
+
+.pp {
+    visibility: hidden;
+}
+

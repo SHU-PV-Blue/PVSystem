@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>光伏软件登录</title>
-    <script src="http:\\cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
-    <script src="http:\\cdn.bootcss.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <link href="http:\\cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../statics/js/jquery.min.js"></script>
+    <script src="../statics/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../statics/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/statics/css/login.css">
 </head>
 <body>
@@ -25,15 +25,15 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">自定义设备</a></li>
-                <li><a href="#">我的项目</a></li>
-                <li><a href="#">新建项目</a></li>
-                <li><a href="#">当前项目</a></li>
+            <ul class="nav navbar-nav" style="visibility: hidden">
+                <li class="active"><a href="#"><span class=" glyphicon glyphicon-home"></span>个人中心</a></li>
+                <li><a href="#">项目管理</a></li>
+                <li><a href="#">当前用户：大王</a></li>
+                <li><a href="#">当前项目：test</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">登录</a></li>
-                <li class="active"><a href="#">注册</a></li>
+                <li class="active"><a href="/home/register">注册</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -41,42 +41,49 @@
 </div>
 <div class="container-fluid tp">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-4 col-md-offset-4">
             <h2>欢迎登录</h2>
-            <p class="right">还没有账号？<a href="/register">立即注册</a>
+            <p class="right">还没有账号？<a href="home/register">立即注册</a>
             <p>
-            <form class="form-horizontal" role="form" action="/login">
-                <div class="form-group">
-                    <label for="inputEmail3" class="col-sm-2 control-label">用户名</label>
-                    <div class="col-sm-10">
-                        <input type="text" name="userId" class="form-control" id="inputEmail3" placeholder="用户名或手机号">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="inputPassword3" class="col-sm-2 control-label">密码</label>
-                    <div class="col-sm-10">
-                        <input type="password" name="password" class="form-control" id="inputPassword3"
-                               placeholder="密码">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-sm-offset-2 col-sm-10">
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox" checked="checked">自动登录
-                            </label>
+                <form class="form-horizontal" role="form" action="/login">
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">用户名</label>
+                        <div class="col-sm-6">
+                            <input type="text" name="userId" class="form-control" id="inputEmail3">
                         </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-sm-offset-2 col-sm-10">
-                        <button type="submit" class="btn btn-primary  btn-lg btn-block">登录</button>
-                    </div>
-                </div>
-            </form>
+                        <div class="col-sm-4">
+            <p id="p1"><span></span></p>
         </div>
-        <a href="" class="forget">忘记密码?</a>
+
     </div>
+    <div class="form-group">
+        <label for="password" class="col-sm-2 control-label">密码</label>
+        <div class="col-sm-6">
+            <input type="password" name="password" class="form-control" id="password">
+        </div>
+        <div class="col-sm-4">
+           <p id="p2"><span></span></p>
+        </div>
+
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-6">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" checked="checked">自动登录
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-6">
+            <button type="submit" class="btn btn-primary  btn-block">登录</button>
+        </div>
+    </div>
+    </form>
+</div>
+<a href="home/forget" class="forget">忘记密码?</a>
+</div>
 </div>
 <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
     <p class="juzhong">Copyright &copy; 2016 上海宝钢节能环保技术有限公司. All Rights Reserved</p>

@@ -17,9 +17,15 @@ public class AjaxController {
     @Autowired
     private SystemService systemService;
 
-    @RequestMapping(value = "/home")
+    @RequestMapping(value = "/userInfo", produces = "text/html;charset=utf-8")
     @ResponseBody
     public String getRoleAndNickname(@CookieValue("pvsystemCookie") String userId) {
         return systemService.getNicknameAndRolenameByUserId(userId);
+    }
+
+    @RequestMapping(value = "/project",produces = "text/html;charset=utf-8")
+    @ResponseBody
+    public String getProjects(@CookieValue("pvsystemCookie") String userId){
+        return systemService.getProjects(userId);
     }
 }

@@ -7,14 +7,19 @@ package com.shupv.service;
 import com.shupv.dao.ProjectDao;
 import com.shupv.dao.RoleDao;
 import com.shupv.dao.UserDao;
+import com.shupv.entity.Project;
 import com.shupv.entity.Role;
 import com.shupv.entity.User;
 import com.shupv.tools.SecurityTools;
+import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.xml.bind.util.JAXBSource;
+
+import java.util.List;
+import java.util.Set;
 
 import static com.shupv.tools.SecurityTools.nullCheck;
 
@@ -87,7 +92,29 @@ public class SystemService {
     public  String createProject(String userId){
         return projectDao.createProject(userId).toString();
     }
+
+
+    /**
+     * 通过userId查找该用户的所有创建过的项目
+     * @param userId
+     * @return 返回该用户所有的项目（所含属性为projectName，buildDate）
+     *      的JSON字符串
+     */
+    public String getProjects(String userId){
+        JSONArray jsonArray = new JSONArray();
+        Set<Project> projects = userDao.getProjectsById(userId);
+        for (Project i:projects) {
+            JSONObject jsonObject = new JSONObject();
+            jsonObject.put("projectName", nullCheck(i.getProjectName()));
+            jsonObject.put("buildDate", nullCheck(i.getBuildDate()));
+            jsonObject.put("comment",nullCheck(i.getComment()));
+            jsonArray.put(jsonObject);
+        }
+        return jsonArray.toString();
+    }
+
     public  String updateProject(String projectId){
         return projectDao.updateProject(projectId).toString();
     }
+
 }
