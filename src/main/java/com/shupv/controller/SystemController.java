@@ -57,6 +57,10 @@ public class SystemController {
     public String baogao(){
         return "baogao";
     }
+    @RequestMapping(value="/forget")
+    public String forget(){
+        return "forget";
+    }
 
 }
 
