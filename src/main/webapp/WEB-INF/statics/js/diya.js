@@ -2,7 +2,6 @@
  * Created by acer1 on 2017/4/26.
  */
 $(function () {
-    alert("1111");
     var radio = document.getElementsByName("bianya");
     var jiradio = document.getElementsByName("jiradio");
     var zuradio = document.getElementsByName("zuradio");
