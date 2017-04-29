@@ -13,6 +13,7 @@ public class SystemController {
     public String information() {
         return "information";
     }
+
     @RequestMapping(value = "/project")
     public String project() {
         return "project";
