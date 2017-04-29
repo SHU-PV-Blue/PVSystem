@@ -35,8 +35,8 @@
                 <li><a href="#">当前项目:test</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="../index">登录</a></li><!--可能有问题-->
-                <li class="active"><a href="#">注册</a></li>
+                <li><a href="#" id="userId"></a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>&nbsp;&nbsp;注销</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -46,7 +46,7 @@
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
             <h2>新用户注册</h2>
-            <p class="right">已有账号？<a href="../index">马上登录</a>
+            <p class="right">已有账号？<a href="/">马上登录</a>
             <p>
                 <form class="form-horizontal" role="form" action="">
                     <div class="form-group">

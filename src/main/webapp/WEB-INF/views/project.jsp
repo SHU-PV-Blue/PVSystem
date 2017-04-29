@@ -218,6 +218,23 @@
         </div><!--col-md-9结束-->
     </div><!--行结束-->
 </div>
+<div class="modal fade" id="project" tabindex="-1" role="dialog" aria-labelledby="ModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="ModalLabel">添加新项目</h4>
+            </div>
+            <div class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="modal" id="mymodel1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <!--模态框-->
     <div class="modal-dialog  modal-lg">

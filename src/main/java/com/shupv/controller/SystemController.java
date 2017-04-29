@@ -17,6 +17,7 @@ public class SystemController {
     public String information() {
         return "information";
     }
+
     @RequestMapping(value = "/project")
     public String project() {
         return "project";
@@ -61,8 +62,20 @@ public class SystemController {
     public String forget(){
         return "forget";
     }
+<<<<<<< HEAD
     @RequestMapping(value="/forget2")
     public String forget2() { return "forget2";}
+=======
+    
+    /**
+     * 点击“立即注册”后进入到register.jsp页面
+     * @return
+     */
+    @RequestMapping(value = "/register")
+    public String register() {
+        return "register";
+    }
+>>>>>>> e231054ae23ab6c32fae970eb38b9891e78e8619
 
 }
 

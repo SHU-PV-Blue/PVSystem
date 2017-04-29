@@ -45,7 +45,13 @@
     <div class="row">
         <div class="col-md-4 col-md-offset-4">
             <h2>欢迎登录</h2>
+<<<<<<< HEAD
             <p style="margin-left:50%">还没有账号？<a href="">立即注册</a><p>
+=======
+
+            <p class="right">还没有账号？<a href="/home/register">立即注册</a>
+            <p>
+>>>>>>> e231054ae23ab6c32fae970eb38b9891e78e8619
                 <form class="form-horizontal" role="form" action="/login">
                     <div class="form-group">
                         <label for="inputEmail3" class="col-sm-2 control-label">用户名</label>
@@ -83,6 +89,10 @@
     </div>
     </form>
    </div>
+</div>
+<div class="message">
+    ${msg}
+    <%session.removeAttribute("msg");%>
 </div>
 <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
     <p class="juzhong">Copyright &copy; 2016 上海宝钢节能环保技术有限公司. All Rights Reserved</p>
