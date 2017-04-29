@@ -48,7 +48,7 @@
             <h2>新用户注册</h2>
             <p class="right">已有账号？<a href="/">马上登录</a>
             <p>
-                <form class="form-horizontal" role="form" action="">
+                <form class="form-horizontal" role="form" action="/register/register">
                     <div class="form-group">
                         <label for="user" class="col-sm-2 control-label">用户名</label>
                         <div class="col-sm-4">
@@ -61,7 +61,7 @@
     <div class="form-group">
         <label for="userName" class="col-sm-2 control-label">昵称</label>
         <div class="col-sm-4">
-            <input type="text" class="form-control" name="userName"  id="userName">
+            <input type="text" class="form-control" name="nickname"  id="userName">
         </div>
         <div class="col-sm-6">
             <p id="p2" class="pp">昵称不能为空</p>
