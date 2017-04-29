@@ -44,7 +44,6 @@ public class UserDao extends BaseDao {
     public boolean insert(User user) {
         try {
             this.getSession().save(user);
-            System.out.print(user.getUserId());
             return true;
         }catch (Exception e){
             return false;
