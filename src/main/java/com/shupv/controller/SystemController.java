@@ -62,6 +62,8 @@ public class SystemController {
     public String forget(){
         return "forget";
     }
+    @RequestMapping(value="/forget2")
+    public String forget2() { return "forget2";}
 
     /**
      * 点击“立即注册”后进入到register.jsp页面
@@ -71,6 +73,7 @@ public class SystemController {
     public String register() {
         return "register";
     }
+
 
 }
 

@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="../statics/css/nav.css">
     <link rel="stylesheet" type="text/css" href="../statics/css/index.css">
     <meta charset="UTF-8">
-    <title>流程</title>
+    <title>首页</title>
 </head>
 <body>
 <nav class="navbar navbar-inverse" role="navigation">

@@ -145,15 +145,18 @@
                 <h2 class="modal-title" id="myModalLabe2">升压变压器</h2>
             </div>
             <div class="modal-body">
-                <input type="radio" name="sheng"/> 一次升压
+                <div style="width: 200px;margin:10px auto">
+                <input type="radio" name="sheng"  /> 一次升压
                 <input type="radio" name="sheng"/> 二次升压
+                </div>
                 <div class="btn-group  btn-group-lg" role="group" aria-label="...">
                     <button type="button" class="btn btn-default">一次升压</button>
                     <button type="button" class="btn btn-default">二次升压</button>
                 </div>
+                <div id="first">
+                <h3>一次升压</h3>
                 <div class="row">
                     <div class="col-md-7">
-                        <h3>一次升压</h3>
                         <select class="form-control" style
                                 ="margin-bottom: 10px">
                         </select><!--需要后端加载数据吗-->
@@ -204,7 +207,130 @@
                                 <td>串联逆变器数量</td>
                                 <td></td>
                             </tr>
+                            <tr>
+                                <td>升压逆变器数量</td>
+                                <td></td>
+                            </tr>
                         </table>
+                    </div>
+                </div>
+            </div>
+                <div id="second">
+                    <h3>二次升压</h3>
+                    <div class="row">
+                        <div class="col-md-7">
+                            <select class="form-control" style
+                                    ="margin-bottom: 10px">
+                            </select><!--需要后端加载数据吗-->
+                            <table class="table table-bordered">
+                                <tr>
+                                    <td>产品名</td>
+                                    <td>额定容量</td>
+                                    <td>额定频率/HZ</td>
+                                    <td>额定电流/A</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>空载额定变比</td>
+                                    <td>半穿越阻抗电压</td>
+                                    <td>调压方式</td>
+                                    <td>额定电压</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>调压范围</td>
+                                    <td>联接组标号</td>
+                                    <td>中性点接地方式</td>
+                                    <td>极性</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-md-5">
+                            <table class="table table-bordered">
+                                <tr>
+                                    <td></td>
+                                    <td>推荐值</td>
+                                </tr>
+                                <tr>
+                                    <td>串联逆变器数量</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>升压逆变器数量</td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">完成</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--第三个模态框-->
+<div class="modal bs-example-modal-lg" id="Modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabe3">
+    <div class="modal-dialog  modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h2 class="modal-title" id="myModalLabe3">高压开关柜</h2>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-7">
+                        <select class="form-control" style
+                                ="margin-bottom: 10px">
+                        </select><!--需要后端加载数据吗-->
+                        <table class="table table-bordered">
+                            <tr>
+                                <td>类型</td>
+                                <td>母线额定电流/A</td>
+                                <td>额定电压/V</td>
+                                <td>额定频率/HZ</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>防护等级</td>
+                                <td>用途</td>
+                                <td>结构形式</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-md-5">
+                        <p>高压开关柜数量</p>
+                        <div class="col-xs-3"><input type="text" class="form-control"/></div>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -215,7 +341,6 @@
         </div>
     </div>
 </div>
-
 <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
     <p class="juzhong">Copyright &copy; 2016 上海宝钢节能环保技术有限公司. All Rights Reserved</p>
 </nav>
