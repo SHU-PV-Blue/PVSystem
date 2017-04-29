@@ -7,11 +7,11 @@
     <script src="http:\\cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
     <script src="http:\\cdn.bootcss.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <link href="http:\\cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/zujianxx.css">
+    <link rel="stylesheet" type="text/css" href="../statics/css/zujianxx.css">
     <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="http:\\cdn.bootcss.com/echarts/3.4.0/echarts.common.js"></script>
-    <script src="js/echarts3.js"></script>
-    <script src="js/zjxx.js"></script>
+    <script src="../statics/js/echarts3.js"></script>
+    <script src="../statics/js/zjxx.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-inverse" role="navigation">

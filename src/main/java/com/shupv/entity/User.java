@@ -10,7 +10,7 @@ import java.util.Set;
  */
 @Entity
 public class User implements Serializable{
-    private int userId;//用户的id
+    private String userId;//用户的id
     private String userName;
     private String password;
     private String phoneNumber;
@@ -29,11 +29,11 @@ public class User implements Serializable{
     }
 
     @Id
-    public int getUserId() {
+    public String getUserId() {
         return userId;
     }
 
-    public void setUserId(int userId) {
+    public void setUserId(String userId) {
         this.userId = userId;
     }
 

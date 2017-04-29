@@ -10,7 +10,7 @@
   <link href="http:\\cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
   <script src="http:\\cdn.bootcss.com/echarts/3.4.0/echarts.common.js"></script>
   <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/fang.css">
+  <link rel="stylesheet" type="text/css" href="../statics/css/fang.css">
 </head>
 <body>
 	<nav class="navbar navbar-inverse" role="navigation">
@@ -104,44 +104,13 @@
 
   </div>
 </div>
-<a href="#" class="btn btn-default btn-sm active" role="button">确认</a>
+</div>
+<a href="#" class="btn btn-default btn-sm active" role="button" >确认</a>
 <a href="#" class="btn btn-default btn-sm active" role="button">返回</a>
 </div><!--行结束-->
 <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
     <p class="juzhong">Copyright &copy; 2016 上海宝钢节能环保技术有限公司. All Rights Reserved</p>
 </nav>
 <!--底部导航条-->
-<script type="text/javascript">
-
-  var fangwj={ "angleInfo": {  //方位角和倾角
-            "dip": "34",     //方位角
-            "bestDipH": 28,   //年辐照度最优倾角
-            "bestDipG": 29,  //年输出电量最优倾角
-            "az": "12",      //倾角
-            "max": 425.267330976606,  //年输出电量最大值
-            "max_H": 1519.433390479158  //年辐照度最大值
-        }
-      }
-
-
-      document.getElementById("fangw").value=fangwj.angleInfo.dip;
-      document.getElementById("qing").value=fangwj.angleInfo.az;
-      document.getElementById("zui").innerHTML=fangwj.angleInfo.bestDipH;
-      document.getElementById("zd").innerHTML=fangwj.angleInfo.max_H.toFixed(2);//需要提取前六位
-      document.getElementById("you").innerHTML=fangwj.angleInfo.bestDipG;
-      document.getElementById("da").innerHTML=fangwj.angleInfo.max.toFixed(2);//提取前六位
-
-
-
-
-
-
-
-
-
-
-
-</script>
-
 </body>
 </html>

@@ -16,6 +16,7 @@ public class Permit implements Serializable{
     private Set<Role> role = new HashSet<Role>();//角色集
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     public int getPermitId() {
         return permitId;
     }

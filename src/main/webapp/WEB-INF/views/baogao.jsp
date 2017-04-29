@@ -15,7 +15,6 @@
 .bb{
   text-align: center;
 }
-
   </style>
 </head>
 <body>
@@ -112,6 +111,5 @@
     <p class="juzhong">Copyright &copy; 2016 上海宝钢节能环保技术有限公司. All Rights Reserved</p>
 </nav>
 <!--底部导航条-->
-</body>
 </body>
 </html>

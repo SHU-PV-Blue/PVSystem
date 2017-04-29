@@ -23,6 +23,7 @@ public class DCBox implements Serializable{
 
     @Id
     @Column(name = "dcbox_id")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     public int getId() {
         return id;
     }

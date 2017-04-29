@@ -18,6 +18,7 @@ public class CentralizedTransform implements Transformer, Serializable {
 
     @Id
     @Column(name = "centralized_transform_id")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     public int getId() {
         return id;
     }

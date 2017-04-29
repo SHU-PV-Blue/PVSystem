@@ -9,7 +9,11 @@ body{
   padding-bottom: 70px;
 
 }
-.aa{
+
+.aa {
   width: 20% !important;
-  margin: 20px auto !important; 
+  margin: 20px auto !important;
+}
+td{
+text-align: center;
 }

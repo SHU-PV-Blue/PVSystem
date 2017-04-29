@@ -18,18 +18,28 @@ public class HighSwitchCabinet implements Serializable {
     private double ratedVoltage;//额定电压/V
     private double ratedFrequency;//额定频率/Hz
     private int safeguardLevel;//防护等级
-    private String use;//用途
+    private String application;//用途
     private String structureFrom;//结构形式
     private Set<KV35> kv35Set = new HashSet<KV35>();
 
     @Id
-    @Column(name = "high_switch_cabinet_id")
+    @Column(name = "highSwitchCabinetId")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     public int getId() {
         return id;
     }
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    @OneToMany(mappedBy = "highSwitchCabinet",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    public Set<KV35> getKv35Set() {
+        return kv35Set;
+    }
+
+    public void setKv35Set(Set<KV35> kv35Set) {
+        this.kv35Set = kv35Set;
     }
 
     public String getBrand() {
@@ -88,12 +98,12 @@ public class HighSwitchCabinet implements Serializable {
         this.safeguardLevel = safeguardLevel;
     }
 
-    public String getUse() {
-        return use;
+    public String getApplication() {
+        return application;
     }
 
-    public void setUse(String use) {
-        this.use = use;
+    public void setApplication(String application) {
+        this.application = application;
     }
 
     public String getStructureFrom() {
@@ -102,14 +112,5 @@ public class HighSwitchCabinet implements Serializable {
 
     public void setStructureFrom(String structureFrom) {
         this.structureFrom = structureFrom;
-    }
-
-    @OneToMany(mappedBy = "highSwitchCabinet",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
-    public Set<KV35> getKv35Set() {
-        return kv35Set;
-    }
-
-    public void setKv35Set(Set<KV35> kv35Set) {
-        this.kv35Set = kv35Set;
     }
 }

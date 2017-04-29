@@ -7,7 +7,7 @@
     <script src="http:\\cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
     <script src="http:\\cdn.bootcss.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <link href="http:\\cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/xiaolu.css">
+    <link rel="stylesheet" type="text/css" href="../statics/css/xiaolu.css">
 </head>
 <body>
 <nav class="navbar navbar-inverse" role="navigation">
