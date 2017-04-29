@@ -65,6 +65,11 @@ public class SystemController {
     @RequestMapping(value="/forget2")
     public String forget2() { return "forget2";}
 
+    @RequestMapping(value = "/newProject")
+    public String newProject(){
+        return "newProject";
+    }
+
     /**
      * 点击“立即注册”后进入到register.jsp页面
      * @return

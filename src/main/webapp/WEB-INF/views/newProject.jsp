@@ -3,9 +3,9 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="http:\\cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
-    <script src="http:\\cdn.bootcss.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <link href="http:\\cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../statics/js/jquery.min.js"></script>
+    <script src="../statics/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../statics/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../statics/css/nav.css">
     <link rel="stylesheet" type="text/css" href="../statics/css/index.css">
     <meta charset="UTF-8">
@@ -23,20 +23,20 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">光伏软件</a>
+            <a class="navbar-brand" href="/home">光伏软件</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav" id="nav1">
-                <li class="active"><a href="/home/project">自定义设备</a></li>
+                <li><a href="/home/project">自定义设备</a></li>
                 <li><a href="#">我的项目</a></li>
-                <li><a href="#">新建项目</a></li>
+                <li class="active"><a href="#">新建项目</a></li>
                 <li><a href="#">当前项目</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right" id="nav2">
-                <li><a href="#">注销登录</a></li>
-                <li><a href="#">当前用户：</a></li>
+                <li><a href="#" id="userId"></a></li>
+                <li><a href="/login/loginOut"><span class="glyphicon glyphicon-log-in"></span>&nbsp;&nbsp;注销</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -156,3 +156,4 @@
     <%--</script>--%>
 </body>
 </html>
+<script src="../statics/js/userInfo.js"></script>

@@ -28,7 +28,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">光伏软件</a>
+            <a class="navbar-brand" href="/home">光伏软件</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->

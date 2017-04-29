@@ -22,7 +22,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">光伏软件</a>
+            <a class="navbar-brand" href="/home">光伏软件</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -50,9 +50,9 @@
             <p>
                 <form class="form-horizontal" role="form" action="">
                     <div class="form-group">
-                        <label for="userId" class="col-sm-2 control-label">用户名</label>
+                        <label for="user" class="col-sm-2 control-label">用户名</label>
                         <div class="col-sm-4">
-                            <input type="email" class="form-control" name="userId" id="userId">
+                            <input type="email" class="form-control" name="userId" id="user">
                         </div>
                         <div class="col-sm-6">
             <p id="p1" class="pp">用户名不能为空</p>

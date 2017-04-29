@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>效率分析</title>
-    <script src="http:\\cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
-    <script src="http:\\cdn.bootcss.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <link href="http:\\cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../statics/js/jquery.min.js"></script>
+    <script src="../statics/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../statics/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../statics/css/xiaolu.css">
 </head>
 <body>
@@ -21,7 +21,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">光伏软件</a>
+            <a class="navbar-brand" href="/home">光伏软件</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -33,8 +33,8 @@
                 <li><a href="#">当前项目</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">切换用户</a></li>
-                <li><a href="#">当前用户：</a></li>
+                <li><a href="#" id="userId"></a></li>
+                <li><a href="/login/loginOut"><span class="glyphicon glyphicon-log-in"></span>&nbsp;&nbsp;注销</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -98,7 +98,7 @@
                 组件性能衰减(%)：<input type="text" size=2>&nbsp;&nbsp;&nbsp;&nbsp;
                 发电系统运行年数(年): <input type="text" size=2><br/>
                 第多少年<!--不会弄-->
-                <input type="range" class="ii"/ >
+                <input type="range" class="ii"/>
                 <br/>
                 <a href="#" class="btn btn-default btn-sm active" role="button">确认</a>
                 <a href="#" class="btn btn-default btn-sm active" role="button">返回</a>
@@ -114,3 +114,4 @@
 </body>
 </body>
 </html>
+<script src="../statics/js/userInfo.js"></script>

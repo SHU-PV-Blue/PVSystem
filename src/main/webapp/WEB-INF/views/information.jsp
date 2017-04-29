@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <title>项目信息</title>
-    <script src="http:\\cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
-    <script src="http:\\cdn.bootcss.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <script src=></script>
+    <script src="../statics/js/jquery.min.js"></script>
+    <script src="../statics/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../statics/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../statics/css/nav.css">
-    <link href="http:\\cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
     <script src="../statics/laydate/laydate.js"></script>
     <link rel="stylesheet" type="text/css" href="../statics/css/information.css">
 </head>
@@ -24,20 +23,20 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">光伏软件</a>
+            <a class="navbar-brand" href="/home">光伏软件</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav" id="nav1">
-                <li class="active"><a href="#">自定义设备</a></li>
+                <li><a href="#">自定义设备</a></li>
                 <li><a href="#">我的项目</a></li>
-                <li><a href="#">新建项目</a></li>
+                <li><a href="active">新建项目</a></li>
                 <li><a href="#">当前项目</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right" id="nav2">
-                <li><a href="#">注销登录</a></li>
-                <li><a href="#">当前用户：</a></li>
+                <li><a href="#" id="userId"></a></li>
+                <li><a href="/login/loginOut"><span class="glyphicon glyphicon-log-in"></span>&nbsp;&nbsp;注销</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -78,8 +77,10 @@
     </div>
     <div class="col-md-8"><img src="../statics/images/basic.jpg"></div>
 </div>
+</div>
 <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
     <p class="juzhong">Copyright &copy; 2016 上海宝钢节能环保技术有限公司. All Rights Reserved</p>
-    </body>
+</nav>
+</body>
 </html>
-   
+<script src="../statics/js/userInfo.js"></script>

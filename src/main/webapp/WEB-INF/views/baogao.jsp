@@ -4,9 +4,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>报告</title>
-	<script src="http:\\cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
-  <script src="http:\\cdn.bootcss.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-  <link href="http:\\cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../statics/js/jquery.min.js"></script>
+    <script src="../statics/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../statics/css/bootstrap.min.css">
   <style type="text/css">
   .juzhong{
   text-align: center;
@@ -28,7 +28,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">光伏软件</a>
+      <a class="navbar-brand" href="/home">光伏软件</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -40,8 +40,8 @@
         <li><a href="#" >当前项目</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">切换用户</a></li>
-        <li><a href="#">当前用户：</a></li>
+          <li><a href="#" id="userId"></a></li>
+          <li><a href="/login/loginOut"><span class="glyphicon glyphicon-log-in"></span>&nbsp;&nbsp</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -113,3 +113,4 @@
 <!--底部导航条-->
 </body>
 </html>
+<script src="../statics/js/userInfo.js"></script>

@@ -22,22 +22,22 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">光伏软件</a>
+            <a class="navbar-brand" href="/home">光伏软件</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li><a href=""></a>首页</li>
-                <li><a href="#">自定义设备</a></li>
+                <li class="active"><a href="">自定义设备</a></li>
                 <li><a href="#">我的项目</a></li>
-                <li class="active"><span class="glyphicon glyphicon-plus" aria-hidden="true" ></span><a href="#" data-toggle="modal" data-target="#Modal">新建项目</a></li>
-                <li><span class="glyphicon glyphicon-user"  aria-hidden="true" ></span><a href="#"></a></li>
+                <li><a data-toggle="modal" data-target="#myModal">新建项目</a></li>
                 <li><a href="#">当前项目：test</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="index">登录</a></li>
-                <li ><a href="/home/register">注册</a></li>
+                <li><a href="#" id="userId"></a></li>
+                <li><a href="/login/loginOut"><span class="glyphicon glyphicon-log-in"></span>&nbsp;&nbsp;注销</a></li>
+
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -676,6 +676,6 @@
 <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
     <p class="juzhong">Copyright &copy; 2016 上海宝钢节能环保技术有限公司. All Rights Reserved</p>
 </nav>
-
 </body>
 </html>
+<script src="../statics/js/userInfo.js"></script>

@@ -16,6 +16,37 @@
     <script src="../statics/js/person.js"></script>
 </head>
 <body>
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/home">光伏软件</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav" id="nav1">
+                <li class="active"><a href="/home/project">自定义设备</a></li>
+                <li><a href="#">我的项目</a></li>
+                <li><a href="#">新建项目</a></li>
+                <li><a href="#">当前项目</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right" id="nav2">
+                <li><a href="#" id="userId"></a></li>
+                <li><a href="/login/loginOut"><span class="glyphicon glyphicon-log-in"></span>&nbsp;&nbsp;注销</a></li>
+
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+</div>
 <div class="row">
     <div class="col-md-offset-4">
         <table id="mytable" cellspacing="10px">
@@ -48,3 +79,4 @@
 
 </body>
 </html>
+<script src="../statics/js/userInfo.js"></script>
