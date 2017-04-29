@@ -30,4 +30,13 @@ public class ProjectController {
         String userId=cookieValue;
         return service.createProject(userId);
     }
+
+//    /**
+//     * 点击“项目信息”后，将项目基本信息保存到数据库，并重定向到
+//     * @return
+//     */
+//    @RequestMapping("/projectInfo")
+//    public String projectInfo(){
+//
+//    }
 }

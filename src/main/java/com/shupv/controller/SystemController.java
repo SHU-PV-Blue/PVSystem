@@ -62,5 +62,14 @@ public class SystemController {
         return "forget";
     }
 
+    /**
+     * 点击“立即注册”后进入到register.jsp页面
+     * @return
+     */
+    @RequestMapping(value = "/register")
+    public String register(){
+        return "register";
+    }
+
 }
 

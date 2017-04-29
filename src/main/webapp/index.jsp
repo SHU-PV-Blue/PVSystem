@@ -44,7 +44,7 @@
         <div class="col-md-4 col-md-offset-4">
             <h2>欢迎登录</h2>
 
-            <p class="right">还没有账号？<a href="home/register">立即注册</a>
+            <p class="right">还没有账号？<a href="/home/register">立即注册</a>
             <p>
                 <form class="form-horizontal" role="form" action="/login">
                     <div class="form-group">
@@ -84,6 +84,10 @@
     </div>
     </form>
    </div>
+</div>
+<div class="message">
+    ${msg}
+    <%session.removeAttribute("msg");%>
 </div>
 <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
     <p class="juzhong">Copyright &copy; 2016 上海宝钢节能环保技术有限公司. All Rights Reserved</p>
