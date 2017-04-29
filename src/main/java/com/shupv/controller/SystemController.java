@@ -63,5 +63,10 @@ public class SystemController {
         return "forget";
     }
 
+    @RequestMapping("/h2")
+    public String home2(){
+        return "home2";
+    }
+
 }
 
