@@ -1,0 +1,14 @@
+2017/4/22 所完成的API说明
+格式：
+编号
+链接
+
+参数说明
+
+返回说明
+----------------
+接口1:
+localhost:8080/login/loginOut
+参数为用户名和密码如：{'userId':value,'password':value}
+
+返回登录页面

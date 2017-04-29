@@ -32,4 +32,18 @@ public class LoginController {
             return "redirect:/";
         }
     }
+    /**
+     *  注销
+     *  把cookies设定为无效
+     *  by lcc
+     */
+    @RequestMapping(value = "/loginOut")
+    public String loginOut(@RequestParam String userId, String password,
+                           HttpServletResponse response){
+        Cookie cookie=new Cookie("pvsystemCookie",userId);
+        cookie.setMaxAge(0);
+        cookie.setPath("/");
+        response.addCookie(cookie);
+        return "redirect:/";
+    }
 }
