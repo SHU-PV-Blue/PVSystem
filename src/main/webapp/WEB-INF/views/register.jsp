@@ -46,7 +46,7 @@
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
             <h2>新用户注册</h2>
-            <p class="right">已有账号？<a href="../index">马上登录</a>
+            <p class="right">已有账号？<a href="/">马上登录</a>
             <p>
                 <form class="form-horizontal" role="form" action="">
                     <div class="form-group">

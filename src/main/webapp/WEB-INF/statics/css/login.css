@@ -11,10 +11,11 @@ body{
 .right{
 margin-left: 80%;
 }
-.right a{
+a{
   text-decoration: none;
 }
 .forget{
-  text-decoration: none;
-  margin-right: 60%;
+  display: block;
+  float:right;
+
 }

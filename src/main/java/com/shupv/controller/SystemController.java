@@ -11,12 +11,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class SystemController {
     @RequestMapping(value = "")
     public String home(){
-        return "home";
+        return "home2";
     }
     @RequestMapping(value = "/information")
     public String information() {
         return "information";
     }
+
     @RequestMapping(value = "/project")
     public String project() {
         return "project";
@@ -56,6 +57,19 @@ public class SystemController {
     @RequestMapping(value="/baogao")
     public String baogao(){
         return "baogao";
+    }
+    @RequestMapping(value="/forget")
+    public String forget(){
+        return "forget";
+    }
+
+    /**
+     * 点击“立即注册”后进入到register.jsp页面
+     * @return
+     */
+    @RequestMapping(value = "/register")
+    public String register() {
+        return "register";
     }
 
 }

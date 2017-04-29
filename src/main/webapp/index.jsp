@@ -6,7 +6,7 @@
     <script src="../statics/js/jquery.min.js"></script>
     <script src="../statics/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../statics/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/statics/css/login.css">
+    <link rel="stylesheet" type="text/css" href="../statics/css/login.css">
 </head>
 <body>
 <nav class="navbar navbar-inverse" role="navigation">
@@ -43,7 +43,8 @@
     <div class="row">
         <div class="col-md-4 col-md-offset-4">
             <h2>欢迎登录</h2>
-            <p class="right">还没有账号？<a href="home/register">立即注册</a>
+
+            <p class="right">还没有账号？<a href="/home/register">立即注册</a>
             <p>
                 <form class="form-horizontal" role="form" action="/login">
                     <div class="form-group">
@@ -78,12 +79,15 @@
     <div class="form-group">
         <div class="col-sm-offset-2 col-sm-6">
             <button type="submit" class="btn btn-primary  btn-block">登录</button>
+            <a href="home/forget" class="forget">忘记密码?</a>
         </div>
     </div>
     </form>
+   </div>
 </div>
-<a href="home/forget" class="forget">忘记密码?</a>
-</div>
+<div class="message">
+    ${msg}
+    <%session.removeAttribute("msg");%>
 </div>
 <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
     <p class="juzhong">Copyright &copy; 2016 上海宝钢节能环保技术有限公司. All Rights Reserved</p>

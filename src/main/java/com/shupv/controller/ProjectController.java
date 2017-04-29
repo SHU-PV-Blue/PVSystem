@@ -19,18 +19,26 @@ public class ProjectController {
 
     @RequestMapping("/createProject")
     @ResponseBody
-    public String createProject(@CookieValue("pvsystemCookie") String cookieValue){
-        String userId=cookieValue;
+    public String createProject(@CookieValue("pvsystemCookie") String cookieValue) {
+        String userId = cookieValue;
         return service.createProject(userId);
     }
 
     @RequestMapping("/updateProjectBaseInfo")
     @ResponseBody
-    public String createProject(@CookieValue("pvsystemCookie") String cookieValue,String BaseInfo){
-        String userId=cookieValue;
+    public String createProject(@CookieValue("pvsystemCookie") String cookieValue, String BaseInfo) {
+        String userId = cookieValue;
         return service.createProject(userId);
     }
-    /**
-     * 组建选型
-     */
+
+
+//    /**
+//     * 点击“项目信息”后，将项目基本信息保存到数据库，并重定向到
+//     * @return
+//     */
+//    @RequestMapping("/projectInfo")
+//    public String projectInfo(){
+//
+//    }
+
 }
