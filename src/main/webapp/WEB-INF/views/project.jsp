@@ -5,9 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <title>自定义设备</title>
-    <script src="http:\\cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
-    <script src="http:\\cdn.bootcss.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <link href="http:\\cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../statics/js/jquery.min.js"></script>
+    <script src="../statics/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../statics/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../statics/css/project.css">
 </head>
 <body>
@@ -28,29 +28,16 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">自定义设备</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false" id="my">我的项目<span class="caret"></span></a>
-                    <ul class="dropdown-menu" id="biao">
-                        <li><a href="#">Action</a>
-                            <button type="button" class="btn btn-danger btn-xs">
-                                <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
-                            </button>
-                        </li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li><a href="#">One more separated link</a></li>
-                    </ul>
-                </li>
-                <li><a href="#" data-toggle="modal" data-target="#modalx">新建项目</a></li>
-                <li><a href="#">当前项目</a></li>
+                <li><a href=""></a>首页</li>
+                <li><a href="#">自定义设备</a></li>
+                <li><a href="#">我的项目</a></li>
+                <li class="active"><span class="glyphicon glyphicon-plus" aria-hidden="true" ></span><a href="#" data-toggle="modal" data-target="#Modal">新建项目</a></li>
+                <li><span class="glyphicon glyphicon-user"  aria-hidden="true" ></span><a href="#"></a></li>
+                <li><a href="#">当前项目：test</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">切换用户</a></li>
-                <li><a href="#">当前用户：</a></li>
+                <li><a href="index">登录</a></li>
+                <li ><a href="/home/register">注册</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

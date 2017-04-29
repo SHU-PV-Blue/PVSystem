@@ -31,7 +31,7 @@
                 <li class="active"><a href="/home/project">自定义设备</a></li>
                 <li><a href="#">我的项目</a></li>
                 <li><a href="#">新建项目</a></li>
-                <li><a href="#">当前用户</a></li>
+                <li><span class="glyphicon glyphicon-user"  aria-hidden="true" ></span><a href="#"></a></li>
                 <li><a href="#">当前项目:test</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">

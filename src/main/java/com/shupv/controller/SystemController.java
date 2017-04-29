@@ -61,6 +61,8 @@ public class SystemController {
     public String forget(){
         return "forget";
     }
+    @RequestMapping(value="/forget2")
+    public String forget2() { return "forget2";}
 
 }
 

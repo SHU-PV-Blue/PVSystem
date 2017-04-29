@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: acer1
-  Date: 2017/4/23
-  Time: 16:42
+  Date: 2017/4/29
+  Time: 10:23
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -10,13 +10,11 @@
 <head>
     <title>找回密码</title>
 </head>
-<body>
 <script src="../statics/js/jquery.min.js"></script>
 <script src="../statics/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="../statics/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="../statics/css/forget.css">
-
-</body>
+<!--<link rel="stylesheet" type="text/css" href="../statics/css/forget.css">-->
+<body>
 <nav class="navbar navbar-inverse" role="navigation">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -35,8 +33,8 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav" style="visibility:hidden">
                 <li class="active"><a href="/home/project">自定义设备</a></li>
-                <li><a href="#">我的项目</a></li>
-                <li><a href="#">新建项目</a></li>
+                <li><a href="#">项目管理</a></li>
+                <li><a href="#">个人中心</a></li>
                 <li><a href="#">当前用户</a></li>
                 <li><a href="#">当前项目:test</a></li>
             </ul>
@@ -50,34 +48,39 @@
 </div>
 <div class="row">
     <div class="col-md-5 col-md-offset-3">
-        <div class="panel panel-danger">
-            <div class="panel-heading">
-                <h3 class="panel-title">验证手机号</h3>
-            </div>
+        <div class="panel panel-default">
             <div class="panel-body">
+                <h2>验证手机号:</h2>
                 <form class="form-horizontal">
-                <div class="form-group">
-                    <label for="phone" class="col-sm-2 control-label">手机号:</label>
-                    <div class="col-sm-6">
-                        <input type="text" name="phone" class="form-control" id="phone">
+                    <div class="form-group">
+                        <div class="col-sm-6 col-sm-offset-2">
+                            <input type="text" name="phone" class="form-control" id="phone">
+                        </div>
+                        <div class="col-sm-4">
+                            <button>获取验证码</button>
+                        </div>
                     </div>
-                    <div class="col-sm-4">
-                        <p id="p1"><span class="glyphicon glyphicon-remove" aria-hidden="true" style="color:red" ></span>请输入正确的手机号</p>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-6">
+                            <button type="submit" class="btn btn-primary  btn-block">验证</button>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-sm-offset-2 col-sm-6">
-                       <!--<button type="submit" class="btn btn-primary  btn-block">验证手机号</button>-->
-                        <a href="/home/forget2">登录</a>
-                    </div>
-                </div>
-            </form>
+                </form>
             </div>
+            <div class="panel-footer">
+                <div class="row">
+                    <div class="col-md-5 col-md-offset-3">
+                        <dl>
+                            <dt>还没有收到验证码?</dt>
+                            <dd>1.检查手机是否有误或是否欠费关机等</dd>
+                            <dd>2.一分钟后重新发送验证码</dd>
+                        </dl>
+                    </div>
 
+                </div>
+            </div>
         </div>
     </div>
-    <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
-        <p class="juzhong">Copyright &copy; 2016 上海宝钢节能环保技术有限公司. All Rights Reserved</p>
-    </nav>
 </div>
+</body>
 </html>
