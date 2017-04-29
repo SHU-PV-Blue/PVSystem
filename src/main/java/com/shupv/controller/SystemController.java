@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class SystemController {
     @RequestMapping(value = "")
     public String home(){
-        return "home";
+        return "home2";
     }
     @RequestMapping(value = "/information")
     public String information() {
@@ -62,7 +62,7 @@ public class SystemController {
     public String forget(){
         return "forget";
     }
-    
+
     /**
      * 点击“立即注册”后进入到register.jsp页面
      * @return
