@@ -45,12 +45,12 @@ public class LoginController {
      *  by lcc
      */
     @RequestMapping(value = "/loginOut")
-    public String loginOut(@RequestParam String userId, String password,
-                           HttpServletResponse response){
-        Cookie cookie=new Cookie("pvsystemCookie",userId);
-        cookie.setMaxAge(0);
-        cookie.setPath("/");
-        response.addCookie(cookie);
+    public String loginOut(HttpServletRequest request,HttpServletResponse response){
+        Cookie[] cookie=request.getCookies();
+        for (Cookie k:cookie){
+            k.setMaxAge(0);
+            response.addCookie(k);
+        }
         return "redirect:/";
     }
 }
