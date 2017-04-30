@@ -68,12 +68,19 @@
                 <h4 class="modal-title" id="myModalLabel">添加新项目</h4>
             </div>
             <div class="modal-body">
-                <span>项目名称:</span>
-                <input type="text" id="projectName"/>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-2" for="projectName">项目名称</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="projectName">
+                        </div>
+                        <div class="col-sm-4"><span class="glyphicon glyphicon-remove-" style="color:red"></span></div>
+                    </div>
+                </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal" id="new1">确定</button>
-                <button type="button" class="btn btn-primary" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" id="new1">确定</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">取消</button>
             </div>
         </div>
     </div>

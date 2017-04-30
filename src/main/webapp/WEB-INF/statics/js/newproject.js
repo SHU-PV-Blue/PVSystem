@@ -14,14 +14,13 @@ $("#new1").click(function () {
             dataType: 'json',
             success: function (data) {
                 if (data.status == true) {
-                   location.href='/home/newProject';//js重定向
-
+                    location.href = '/home/newProject';//js重定向
                 }
             },
             error: function () {
                 alert('error');
             }
-        })
+        });
 
     }
 )
