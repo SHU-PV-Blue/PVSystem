@@ -20,6 +20,23 @@ localhost:8080//project/current
 localhost:8080//project/checkProjectName
 
 参数：projectName
+使用方法如下：
+$.ajax({
+    url: '/project/checkProjectName',
+    type: 'get',
+    data:{'projectName':projectName},
+    dataType: 'json',
+    success: function (data) {
+       if(data.success==true){
+            //项目不名存在
+       }else{
+            //
+       }
+    },
+    error: function () {
+        alert('error');
+    }
+});
 
 返回：{"success":false},false表示项目名存在，true表示项目不名存在
 
