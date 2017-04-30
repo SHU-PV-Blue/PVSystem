@@ -1,0 +1,44 @@
+2017/4/30 所完成的API说明
+格式：
+编号
+链接
+
+参数说明
+
+返回说明
+
+1.
+localhost:8080//project/current
+
+参数：projectName,默认情况下projectName="###latest###"
+
+返回：返回项目的名称，和项目的id,如：{"projectName":"tttt","projectId":3}
+默认情况下返回的是当前所创建的项目，非默认情况下返回的项目名projectName对应的id
+
+
+2.
+localhost:8080//project/checkProjectName
+
+参数：projectName
+使用方法如下：
+$.ajax({
+    url: '/project/checkProjectName',
+    type: 'get',
+    data:{'projectName':projectName},
+    dataType: 'json',
+    success: function (data) {
+       if(data.success==true){
+            //项目不名存在
+       }else{
+            //
+       }
+    },
+    error: function () {
+        alert('error');
+    }
+});
+
+返回：{"success":false},false表示项目名存在，true表示项目不名存在
+
+
+

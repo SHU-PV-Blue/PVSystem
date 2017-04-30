@@ -1,13 +1,13 @@
-window.onload=function(){
-	var heng=document.getElementById("heng");
-	var shu=document.getElementById("shu");
-	var fang=document.getElementsByName("pai");
-	if(fang[0].checked==true){
-		heng.className="show";
-		shu.className="hide";
-	}
-	if(fang[1].checked==true){
-		shu.className="show";
-		heng.className="hide";
-	}
-}
+
+    var heng = document.getElementById("heng");
+    var shu = document.getElementById("shu");
+    var fang = document.getElementsByName("pai");
+
+    function displayPai(a, b) {
+        a.style.display = "block";
+        b.style.display = "none";
+    }
+
+    fang[0].addEventListener('click', displayPai(heng, shu), false);
+    fang[1].addEventListener('click', displayPai(shu, heng), false);
+

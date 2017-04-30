@@ -4,12 +4,13 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
 /**
  * Created by zihua on 17-3-29.
  */
 @Entity
-public class User implements Serializable{
+public class User implements Serializable {
     private String userId;//用户的id
     private String userName;
     private String password;
@@ -17,9 +18,9 @@ public class User implements Serializable{
     private Role role;//用户所对应的角色
     private String name;
     private String mail;
-    private Set<Project> projectSet = new HashSet<Project>();
+    private Set<Project> projectSet = new TreeSet<Project>();
 
-    @OneToMany(mappedBy = "user",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     public Set<Project> getProjectSet() {
         return projectSet;
     }
@@ -61,7 +62,7 @@ public class User implements Serializable{
         this.phoneNumber = phoneNumber;
     }
 
-    @ManyToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "roleId")
     public Role getRole() {
         return role;

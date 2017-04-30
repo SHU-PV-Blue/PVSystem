@@ -12,7 +12,7 @@
 </head>
 <body>
 <nav class="navbar navbar-inverse" role="navigation">
-    <div class="container-fluid">
+    <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -22,7 +22,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">光伏软件</a>
+            <a class="navbar-brand" href="/home">光伏软件</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -34,8 +34,9 @@
                 <li><a href="#">当前项目</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">切换用户</a></li>
-                <li><a href="#">当前用户：</a></li>
+                <li><a href="#" id="userId"></a></li>
+                <li><a href="/login/loginOut"><span class="glyphicon glyphicon-log-in"></span>&nbsp;&nbsp;注销</a></li>
+
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -58,8 +59,8 @@
             <div class="thumbnail">
                 <img data-src="holder.js/300x200" alt="直流汇流箱" src="../statics/images/huiliuxiang.jpg" class="gao">
                 <div class="caption">
-                    <a href="#" class="btn btn-primary btn-block " role="button"  data-toggle="modal"
-                       data-target="#myModal2" name="jiradio" >直流汇流箱</a>
+                    <a href="#" class="btn btn-primary btn-block " role="button" data-toggle="modal"
+                       data-target="#myModal2" name="jiradio">直流汇流箱</a>
                 </div>
             </div>
         </div>
@@ -67,7 +68,7 @@
             <div class="thumbnail">
                 <img data-src="holder.js/100%x180" alt="直流配电柜" src="../statics/images/peidiangui.jpg" class="gao">
                 <div class="caption">
-                    <a href="#" class="btn btn-primary btn-block " role="button"  data-toggle="modal"
+                    <a href="#" class="btn btn-primary btn-block " role="button" data-toggle="modal"
                        data-target="#myModal2" name="jiradio">直流配电柜</a>
                 </div>
             </div>
@@ -91,7 +92,7 @@
                 <div class="thumbnail">
                     <img data-src="holder.js/300x200" alt="组串式逆变器" src="../statics/images/zunibianqi.png" class="gao">
                     <div class="caption">
-                        <a href="#" class="btn btn-primary btn-block " role="button"  data-toggle="modal"
+                        <a href="#" class="btn btn-primary btn-block " role="button" data-toggle="modal"
                            data-target="#myModal5" name="zuradio">组串式逆变器</a>
                     </div>
                 </div>
@@ -102,7 +103,7 @@
                     <img data-src="holder.js/300x200" alt="电缆" src="../statics/images/dianlan.jpg" class="gao">
                     <div class="caption">
                         <a href="#" class="btn btn-primary btn-block " role="button" data-toggle="modal"
-                           data-target="#myModal6"name="zuradio" >电缆</a>
+                           data-target="#myModal6" name="zuradio">电缆</a>
                     </div>
                 </div>
             </div>
@@ -352,7 +353,8 @@
     <div class="modal-dialog  modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span>
                 </button>
                 <h1 class="modal-title" id="myModalLabel4">电缆</h1>
             </div>
@@ -626,16 +628,17 @@
     <div class="modal-dialog  modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span>
                 </button>
                 <h1 class="modal-title" id="myModalLabel6">电缆</h1>
             </div>
             <div class="modal-body">
                 <div class="row" style="margin-bottom: 10px">
                     <div class="col-md-offset-4">
-                    <img src="../statics/images/zhenlie.png" style="width:100px; height:100px"/>
-                    <img src="../statics/images/arrow.png" style="width:100px;height:10px"/>
-                    <img src="../statics/images/zunibianqi.png"  style="width:100px; height:100px"/>
+                        <img src="../statics/images/zhenlie.png" style="width:100px; height:100px"/>
+                        <img src="../statics/images/arrow.png" style="width:100px;height:10px"/>
+                        <img src="../statics/images/zunibianqi.png" style="width:100px; height:100px"/>
                     </div>
                 </div>
                 <select class="form-control" style
@@ -682,10 +685,9 @@
                         </tr>
                     </table>
                 </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">完成</button>
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">取消</button>
-                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">完成</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">取消</button>
                 </div>
             </div>
         </div>
@@ -693,6 +695,7 @@
 </div>
 </div>
 </div>
-
+</div>
 </body>
 </html>
+<script src="../statics/js/userInfo.js"></script>

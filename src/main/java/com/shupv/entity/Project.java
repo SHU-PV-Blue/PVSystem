@@ -8,7 +8,7 @@ import java.util.Date;
  * Created by cc on 17-4-4.
  */
 @Entity
-public class Project implements Serializable {
+public class Project implements Serializable, Comparable<Project> {
     private int projectId;
     private String projectName;
     private PVPanel pvPanel;
@@ -22,7 +22,7 @@ public class Project implements Serializable {
     private String comment;//备注
     private User user;
 
-    @ManyToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "userId")
     public User getUser() {
         return user;
@@ -50,7 +50,7 @@ public class Project implements Serializable {
         this.projectName = projectName;
     }
 
-    @ManyToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "PVPId")
     public PVPanel getPvPanel() {
         return pvPanel;
@@ -76,7 +76,7 @@ public class Project implements Serializable {
         this.col = col;
     }
 
-    @ManyToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "climaticId")
     public ClimaticData getClimaticData() {
         return climaticData;
@@ -86,7 +86,7 @@ public class Project implements Serializable {
         this.climaticData = climaticData;
     }
 
-    @ManyToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "high_pressure_device_id")
     public LowPressureDevice getLowPressureDevice() {
         return lowPressureDevice;
@@ -96,7 +96,7 @@ public class Project implements Serializable {
         this.lowPressureDevice = lowPressureDevice;
     }
 
-    @ManyToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "lowPressureDeviceId")
     public HighPressureDevice getHighPressureDevice() {
         return highPressureDevice;
@@ -128,5 +128,10 @@ public class Project implements Serializable {
 
     public void setComment(String comment) {
         this.comment = comment;
+    }
+
+    @Override
+    public int compareTo(Project o) {
+        return -1 * this.buildDate.compareTo(o.buildDate);
     }
 }

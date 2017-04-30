@@ -5,16 +5,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>方位倾角和设计</title>
-	<script src="http:\\cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
-  <script src="http:\\cdn.bootcss.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-  <link href="http:\\cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-  <script src="http:\\cdn.bootcss.com/echarts/3.4.0/echarts.common.js"></script>
-  <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="../statics/js/jquery.min.js"></script>
+  <script src="../statics/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../statics/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="../statics/css/fang.css">
 </head>
 <body>
 	<nav class="navbar navbar-inverse" role="navigation">
-  <div class="container-fluid">
+  <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -23,7 +21,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">光伏软件</a>
+      <a class="navbar-brand" href="/home">光伏软件</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -114,3 +112,4 @@
 <!--底部导航条-->
 </body>
 </html>
+<script src="../statics/js/userInfo.js"></script>

@@ -16,7 +16,7 @@
 <!--<link rel="stylesheet" type="text/css" href="../statics/css/forget.css">-->
 <body>
 <nav class="navbar navbar-inverse" role="navigation">
-    <div class="container-fluid">
+    <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -26,7 +26,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">光伏软件</a>
+            <a class="navbar-brand" href="/home">光伏软件</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -40,7 +40,7 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="../index">登录</a></li><!--可能有问题-->
-                <li class="active"><a href="#">注册</a></li>
+                <li><a href="#">注册</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
