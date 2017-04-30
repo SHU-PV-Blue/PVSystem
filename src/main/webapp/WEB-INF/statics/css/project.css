@@ -12,18 +12,12 @@ body{
 }
 .right{
   display: inline-block;
-   margin-left: 500px;
+   margin-right: 30%;
  
 }
 th,td{
   width: 1%;
 
-}
-.hide{
-  display: none;
-}
-.show{
-  display: block;
 }
 #new{
   display: inline-block;
@@ -33,5 +27,9 @@ th,td{
 #inew{
   margin-left: 20px;
   width: 70%;
-
 }
+td input{
+  width:105px;
+  height:25px;
+}
+
