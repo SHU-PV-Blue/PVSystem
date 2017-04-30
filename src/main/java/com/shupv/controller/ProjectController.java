@@ -19,17 +19,11 @@ public class ProjectController {
 
     @RequestMapping("/createProject")
     @ResponseBody
-    public String createProject(@CookieValue("pvsystemCookie") String cookieValue) {
+    public String createProject(@CookieValue("pvsystemCookie") String cookieValue, String projectName) {
         String userId = cookieValue;
-        return service.createProject(userId);
+        return service.createProject(userId,projectName);
     }
 
-    @RequestMapping("/updateProjectBaseInfo")
-    @ResponseBody
-    public String createProject(@CookieValue("pvsystemCookie") String cookieValue, String BaseInfo) {
-        String userId = cookieValue;
-        return service.createProject(userId);
-    }
 
 
 //    /**

@@ -27,11 +27,12 @@ public class ProjectDao extends BaseDao{
      * @param userId
      * @return 返回{"status":"true"}
      */
-    public JSONObject createProject(String userId){
+    public JSONObject createProject(String userId,String projectName){
         JSONObject result = new JSONObject();
         User user = this.getSession().get(User.class, userId);
         try{
             Project project=new Project();
+            project.setProjectName(projectName);
             project.setUser(user);
             project.setBuildDate(new Date());
             this.getSession().save(project);

@@ -36,9 +36,8 @@
                 <li><a href="#">当前项目</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right" id="nav2">
-                <li><a href="#" id="userId"></a></li>
+                <li><a href="/home/person" id="userId"></a></li>
                 <li><a href="/login/loginOut"><span class="glyphicon glyphicon-log-in"></span>&nbsp;&nbsp;注销</a></li>
-
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -70,10 +69,10 @@
             </div>
             <div class="modal-body">
               <span>项目名称:</span>
-                <input type="text"/>
+                <input type="text" id="projectName"/>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">确定</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal" id="new1">确定</button>
                 <button type="button" class="btn btn-primary" data-dismiss="modal">取消</button>
             </div>
         </div>
@@ -82,3 +81,4 @@
 </body>
 </html>
 <script src="../statics/js/userInfo.js"></script>
+<script src="../statics/js/newproject.js"></script>

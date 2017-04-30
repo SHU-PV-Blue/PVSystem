@@ -69,6 +69,10 @@ public class SystemController {
     public String newProject(){
         return "newProject";
     }
+    @RequestMapping(value = "/person")
+    public String persion(){
+        return "person";
+    }
 
     /**
      * 点击“立即注册”后进入到register.jsp页面

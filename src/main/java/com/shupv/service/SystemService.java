@@ -89,8 +89,8 @@ public class SystemService {
         return jsonObject.toString();
     }
 
-    public  String createProject(String userId){
-        return projectDao.createProject(userId).toString();
+    public  String createProject(String userId,String projectName){
+        return projectDao.createProject(userId,projectName).toString();
     }
 
 
