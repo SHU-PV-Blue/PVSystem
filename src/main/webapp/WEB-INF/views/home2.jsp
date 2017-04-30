@@ -31,7 +31,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav" id="nav1">
                 <li class="active"><a href="/home/project">自定义设备</a></li>
-                <li><a href="#">我的项目</a></li>
+                <li><a href="">我的项目</a></li>
                 <li><a data-toggle="modal" data-target="#project">新建项目</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right" id="nav2">
@@ -58,14 +58,15 @@
     </nav>
     <!--底部导航条-->
 </div>
-<div class="modal" id="project" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<!--新建项目的模态框-->
+<div class="modal" id="project" tabindex="-1" role="dialog" aria-labelledby="myprojectModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                         aria-hidden="true">&times;</span>
                 </button>
-                <h4 class="modal-title" id="myModalLabel">添加新项目</h4>
+                <h4 class="modal-title" id="myprojectModalLabel">添加新项目</h4>
             </div>
             <div class="modal-body">
                 <form class="form-horizontal">
