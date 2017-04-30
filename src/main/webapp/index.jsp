@@ -45,13 +45,8 @@
     <div class="row">
         <div class="col-md-4 col-md-offset-4">
             <h2>欢迎登录</h2>
-<<<<<<< HEAD
-            <p style="margin-left:50%">还没有账号？<a href="">立即注册</a><p>
-=======
-
             <p class="right">还没有账号？<a href="/home/register">立即注册</a>
             <p>
->>>>>>> e231054ae23ab6c32fae970eb38b9891e78e8619
                 <form class="form-horizontal" role="form" action="/login">
                     <div class="form-group">
                         <label for="inputEmail3" class="col-sm-2 control-label">用户名</label>
@@ -90,7 +85,7 @@
     </form>
    </div>
 </div>
-<div class="message">
+<div>
     ${msg}
     <%session.removeAttribute("msg");%>
 </div>

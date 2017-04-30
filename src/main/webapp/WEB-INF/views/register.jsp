@@ -96,7 +96,10 @@
     </form>
 </div>
 <!--验证码-->
-
+<div>
+    ${registerMsg}
+    <%session.removeAttribute("registerMsg");%>
+</div>
 
 <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
     <p class="juzhong">Copyright &copy; 2016 上海宝钢节能环保技术有限公司. All Rights Reserved</p>

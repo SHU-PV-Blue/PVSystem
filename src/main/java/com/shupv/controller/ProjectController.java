@@ -32,13 +32,13 @@ public class ProjectController {
     }
 
 
-//    /**
-//     * 点击“项目信息”后，将项目基本信息保存到数据库，并重定向到
-//     * @return
-//     */
-//    @RequestMapping("/projectInfo")
-//    public String projectInfo(){
-//
-//    }
+    /**
+     * 点击“项目信息”后，将项目基本信息保存到数据库，并重定向到新建项目页面
+     * @return
+     */
+    @RequestMapping("/projectInfo")
+    public String projectInfo(){
+        return "home";
+    }
 
 }
