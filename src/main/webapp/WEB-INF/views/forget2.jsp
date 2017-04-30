@@ -40,7 +40,7 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="../index">登录</a></li><!--可能有问题-->
-                <li class="active"><a href="#">注册</a></li>
+                <li><a href="#">注册</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

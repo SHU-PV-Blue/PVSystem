@@ -14,9 +14,7 @@ $("#new1").click(function () {
             dataType: 'json',
             success: function (data) {
                 if (data.status==true) {
-                    ('/home/newProject');//js重定向
-
-
+                    window.location.href='/home/newProject';//js重定向
                 }
             },
             error: function () {
