@@ -31,7 +31,7 @@
             <ul class="nav navbar-nav" id="nav1">
                 <li><a href="#">自定义设备</a></li>
                 <li><a href="#">我的项目</a></li>
-                <li><a href="active">新建项目</a></li>
+                <li><a data-toggle="modal" data-target="#project">新建项目</a></li>
                 <li><a href="#">当前项目</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right" id="nav2">
@@ -74,9 +74,41 @@
             <td></td>
             <td align="left"><input type="text" size=4 id="jingdu"> <input type="text" size=4 id="weidu"></td>
         </table>
+        <div class="aa" style="float:right">
+            <a href="" class="btn btn-default btn-sm " role="button">确认</a>
+            <a href="/home/newProject" class="btn btn-default btn-sm " role="button">返回</a>
+        </div>
     </div>
     <div class="col-md-8"><img src="../statics/images/basic.jpg"></div>
 </div>
+</div>
+<!--新建项目的模态框-->
+<div class="modal" id="project" tabindex="-1" role="dialog" aria-labelledby="myprojectModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myprojectModalLabel">添加新项目</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-2" for="projectName">项目名称</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="projectName">
+                        </div>
+                        <div class="col-sm-4"><span class="glyphicon glyphicon-remove-" style="color:red"></span></div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal" id="new1">确定</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
 </div>
 <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
     <p class="juzhong">Copyright &copy; 2016 上海宝钢节能环保技术有限公司. All Rights Reserved</p>

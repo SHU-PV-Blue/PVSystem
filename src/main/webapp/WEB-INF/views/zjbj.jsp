@@ -8,7 +8,6 @@
     <script src="../statics/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../statics/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../statics/css/zjbj.css">
-    <script src="../statics/js/zujian.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-inverse" role="navigation">
@@ -44,7 +43,7 @@
 </div>
 <div class="row">
     <div class="col-md-10 col-md-offset-1">
-        <div class="pull-left" id="heng">  <!--做处理-->
+        <div class="pull-left" id="heng">
             <img src="../statics/images/heng1.png">
             <img src="../statics/images/heng2.png">
         </div>
@@ -171,3 +170,4 @@
 </body>
 </html>
 <script src="../statics/js/userInfo.js"></script>
+<script src="../statics/js/zjbj.js"></script>
