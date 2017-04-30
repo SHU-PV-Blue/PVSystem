@@ -14,7 +14,7 @@
 </head>
 <body>
 <nav class="navbar navbar-inverse" role="navigation">
-    <div class="container-fluid">
+    <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -33,7 +33,6 @@
                 <li class="active"><a href="/home/project">自定义设备</a></li>
                 <li><a href="#">我的项目</a></li>
                 <li><a data-toggle="modal" data-target="#project">新建项目</a></li>
-                <li><a href="#">当前项目</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right" id="nav2">
                 <li><a href="/home/person" id="userId"></a></li>
@@ -63,12 +62,13 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span>
                 </button>
                 <h4 class="modal-title" id="myModalLabel">添加新项目</h4>
             </div>
             <div class="modal-body">
-              <span>项目名称:</span>
+                <span>项目名称:</span>
                 <input type="text" id="projectName"/>
             </div>
             <div class="modal-footer">

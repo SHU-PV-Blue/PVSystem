@@ -16,7 +16,7 @@
 <!--<link rel="stylesheet" type="text/css" href="../statics/css/forget.css">-->
 <body>
 <nav class="navbar navbar-inverse" role="navigation">
-    <div class="container-fluid">
+    <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"

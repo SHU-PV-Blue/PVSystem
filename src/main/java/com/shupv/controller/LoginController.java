@@ -20,7 +20,7 @@ public class LoginController {
     private SystemService systemService;
 
     @RequestMapping(value = "/index")
-    public String index(){
+    public String index() {
         return "index";
     }
 
@@ -28,26 +28,26 @@ public class LoginController {
     public String loginCheck(@RequestParam String userId, String password,
                              HttpServletResponse response, HttpServletRequest request) {
         boolean isOk = systemService.checkUserByIdAndPwd(userId, password);
-        if (isOk){
+        if (isOk) {
             Cookie cookie = new Cookie("pvsystemCookie", userId);
-            cookie.setMaxAge(60*60*24*3);
+            cookie.setMaxAge(60 * 60 * 24 * 3);
             response.addCookie(cookie);
             return "redirect:/home";
-        }
-        else {
-            request.getSession().setAttribute("msg","用户不存在");
+        } else {
+            request.getSession().setAttribute("msg", "用户不存在");
             return "redirect:/";
         }
     }
+
     /**
-     *  注销
-     *  把cookies设定为无效
-     *  by lcc
+     * 注销
+     * 把cookies设定为无效
+     * by lcc
      */
     @RequestMapping(value = "/loginOut")
-    public String loginOut(HttpServletRequest request,HttpServletResponse response){
-        Cookie[] cookie=request.getCookies();
-        for (Cookie k:cookie){
+    public String loginOut(HttpServletRequest request, HttpServletResponse response) {
+        Cookie[] cookie = request.getCookies();
+        for (Cookie k : cookie) {
             k.setMaxAge(0);
             response.addCookie(k);
         }

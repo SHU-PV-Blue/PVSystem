@@ -18,7 +18,7 @@
 
 </body>
 <nav class="navbar navbar-inverse" role="navigation">
-    <div class="container-fluid">
+    <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -56,22 +56,23 @@
             </div>
             <div class="panel-body">
                 <form class="form-horizontal">
-                <div class="form-group">
-                    <label for="phone" class="col-sm-2 control-label">手机号:</label>
-                    <div class="col-sm-6">
-                        <input type="text" name="phone" class="form-control" id="phone">
+                    <div class="form-group">
+                        <label for="phone" class="col-sm-2 control-label">手机号:</label>
+                        <div class="col-sm-6">
+                            <input type="text" name="phone" class="form-control" id="phone">
+                        </div>
+                        <div class="col-sm-4">
+                            <p id="p1"><span class="glyphicon glyphicon-remove" aria-hidden="true"
+                                             style="color:red"></span>请输入正确的手机号</p>
+                        </div>
                     </div>
-                    <div class="col-sm-4">
-                        <p id="p1"><span class="glyphicon glyphicon-remove" aria-hidden="true" style="color:red" ></span>请输入正确的手机号</p>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-6">
+                            <!--<button type="submit" class="btn btn-primary  btn-block">验证手机号</button>-->
+                            <a href="/home/forget2">登录</a>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-sm-offset-2 col-sm-6">
-                       <!--<button type="submit" class="btn btn-primary  btn-block">验证手机号</button>-->
-                        <a href="/home/forget2">登录</a>
-                    </div>
-                </div>
-            </form>
+                </form>
             </div>
 
         </div>

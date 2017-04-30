@@ -13,9 +13,8 @@ $("#new1").click(function () {
             type: 'get',
             dataType: 'json',
             success: function (data) {
-                if (data.status==true) {
-                    ('/home/newProject');//js重定向
-
+                if (data.status == true) {
+                   location.href='/home/newProject';//js重定向
 
                 }
             },
