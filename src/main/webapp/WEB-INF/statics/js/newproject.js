@@ -7,14 +7,16 @@
 
  )*/
 $("#new1").click(function () {
+        var proName = $('#projectName').val();
+        alert(proName);
         $.ajax({
             url: '/project/createProject',
-            data: {'projectName': $("#projectName").val},
+            data: {'projectName': proName},
             type: 'get',
             dataType: 'json',
             success: function (data) {
                 if (data.status == true) {
-                    location.href = '/home/newProject';//js重定向
+                    location.href = '/home/newProject?projectName='+proName;//js重定向
                 }
             },
             error: function () {

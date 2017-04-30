@@ -31,8 +31,8 @@
             <ul class="nav navbar-nav" id="nav1">
                 <li><a href="/home/project">自定义设备</a></li>
                 <li><a href="#">我的项目</a></li>
-                <li class="active"><a href="#">新建项目</a></li>
-                <li><a href="#">当前项目</a></li>
+                <li><a href="#">新建项目</a></li>
+                <li class="active"><a href="#" id="current"></a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right" id="nav2">
                 <li><a href="#" id="userId"></a></li>
@@ -157,3 +157,4 @@
 </body>
 </html>
 <script src="../statics/js/userInfo.js"></script>
+<script src="../statics/js/currentProject.js"></script>

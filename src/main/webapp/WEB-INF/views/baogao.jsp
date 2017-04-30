@@ -48,7 +48,7 @@
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
-</div>
+
 <div>
     <table class="bb">
         <caption>综合经济效益表</caption>

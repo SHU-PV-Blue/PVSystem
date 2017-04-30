@@ -42,7 +42,7 @@
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
-<div class="container-fluid">
+<div class="container">
     <div class="row">
         <div class="col-md-3">
             <div class="list-group" id="liebiao">
@@ -222,7 +222,8 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title" id="ModalLabel">添加新项目</h4>
             </div>
             <div class="modal-body">
@@ -257,9 +258,9 @@
                         </tr>
                         <tr>
                             <td><input type="text" size=10/></td>
-                            <td><input type="text"  size=10/></td>
-                            <td><input  type="text" size=10/></td>
-                            <td><input  type="text" size=10/></td>
+                            <td><input type="text" size=10/></td>
+                            <td><input type="text" size=10/></td>
+                            <td><input type="text" size=10/></td>
                             <td><input type="text" size=10/></td>
                             <td><input type="text" size=10/></td>
                         </tr>

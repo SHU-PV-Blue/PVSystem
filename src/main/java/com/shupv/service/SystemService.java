@@ -8,7 +8,6 @@ import com.shupv.dao.ProjectDao;
 import com.shupv.dao.RoleDao;
 import com.shupv.dao.UserDao;
 import com.shupv.entity.Project;
-import com.shupv.entity.Role;
 import com.shupv.entity.User;
 import com.shupv.tools.SecurityTools;
 import org.json.JSONArray;
@@ -16,9 +15,7 @@ import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.xml.bind.util.JAXBSource;
 
-import java.util.List;
 import java.util.Set;
 
 import static com.shupv.tools.SecurityTools.nullCheck;
