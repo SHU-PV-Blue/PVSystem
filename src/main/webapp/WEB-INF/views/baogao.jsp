@@ -4,19 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <title>报告</title>
-    <script src="../statics/js/jquery.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="../statics/DataTables-1.10.15/media/css/jquery.dataTables.css">
+    <script src="../statics/DataTables-1.10.15/media/js/jquery.js"></script>
+    <script src="../statics/DataTables-1.10.15/media/js/jquery.dataTables.js"></script>
     <script src="../statics/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../statics/css/bootstrap.min.css">
-    <style type="text/css">
-        .juzhong {
-            text-align: center;
-            line-height: 50px;
-        }
+    <link rel="stylesheet" type="text/css" href="../statics/css/nav.css">
+    <link rel="stylesheet" type="text/css" href="../statics/css/baogao.css">
 
-        .bb {
-            text-align: center;
-        }
-    </style>
 </head>
 <body>
 <nav class="navbar navbar-inverse" role="navigation">
@@ -48,15 +43,17 @@
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
-
-<div>
-    <table class="bb">
+    <div class="row">
+    <table id="biao" class="col-md-8 col-md-offset-2 table-bordered ">
         <caption>综合经济效益表</caption>
+        <thead>
         <tr>
             <th>名称</th>
             <th>金额</th>
             <th>备注</th>
         </tr>
+        </thead>
+        <tbody>
         <tr>
             <th>项目总现金支出</th>
             <td></td>
@@ -107,7 +104,13 @@
             <td>&nbsp;</td>
             <td>年</td>
         </tr>
+        </tbody>
     </table>
+</div>
+
+<div class="aa" style="margin-top:100px;margin-left: 40%">
+    <a href="#" class="btn btn-primary btn-sm " role="button">导出PDF</a>
+    <a href="#" class="btn btn-default btn-sm " role="button">返回 </a>
 </div>
 <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
     <p class="juzhong">Copyright &copy; 2016 上海宝钢节能环保技术有限公司. All Rights Reserved</p>
@@ -116,3 +119,4 @@
 </body>
 </html>
 <script src="../statics/js/userInfo.js"></script>
+<script src="../statics/js/baogao.js"></script>
