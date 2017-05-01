@@ -46,3 +46,38 @@ localhost:8080//register/register
 
 注册页面，注册成功进入localhost:8080//home，并返回名称为pvsystemCookie的cookie，
 其中保存userId，失败时停留在该页面
+
+2018/5/1 所完成的API说明
+格式：
+编号
+链接
+
+参数说明
+
+返回说明
+
+1.
+service层：ProjectService下的getProjectInfo
+通过用户的id和项目的name来获取项目信息
+
+参数为用户的id和项目的name
+
+返回值为项目信息的JSON字符串或是查询失败的标志。（注：空属性的value为空字符串"")
+数据形式：{"col":1,"site":"","comment":"test","buildDate":"2017-05-01 11:28:48.0","row":1,"projectName":"test_project"}
+
+
+2.(未测试)
+service层：ProjectService下的updateProjectInfo
+通过用户的id,项目的name以及JSON字符串来更改项目信息
+
+参数为用户的id,项目的name以及JSON字符串
+
+返回值为是否成功的JSON字符串
+
+3.（未测试）
+service层:ProjectService下的getClimaticInfo
+通过用户的id,项目的name来获取项目的气象信息
+
+参数参数为用户的id,项目的name
+
+返回值为项目信息的JSON字符串或是查询失败的标志。（注：空属性的value为空字符串"")

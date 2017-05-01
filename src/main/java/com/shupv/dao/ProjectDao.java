@@ -3,6 +3,7 @@ package com.shupv.dao;
 import com.shupv.entity.Project;
 import com.shupv.entity.User;
 import org.json.JSONObject;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.Date;
@@ -22,6 +23,8 @@ import java.util.TreeSet;
 
 @Repository
 public class ProjectDao extends BaseDao {
+    @Autowired
+    private UserDao userDao;
 
     /**
      * 创建项目
@@ -57,6 +60,41 @@ public class ProjectDao extends BaseDao {
             return result;
         }
     }
+
+    /**
+     * 通过项目的projectName和用户的id来获取项目信息
+     * @param p_name,u_id
+     * @return
+     */
+    public Project getProjectByPNameAndUId(String u_id, String p_name){
+        try {
+            User user = userDao.getUserById(u_id);
+            Project project = (Project) this.getSession().
+                    createQuery("from Project where projectName=? and user=?")
+                    .setParameter(0, p_name)
+                    .setParameter(1, user)
+                    .list()
+                    .get(0);
+            return project;
+        }catch (NullPointerException e){
+            return null;
+        }
+    }
+
+    /**
+     * 更新项目信息，返回是否成功
+     * @param project
+     * @return
+     */
+    public boolean update(Project project){
+        try {
+            this.getSession().save(project);
+            return true;
+        }catch (Exception e){
+            return false;
+        }
+    }
+
 
     public Project getCurrentProject(String userId, String projectName) {
         User u = this.getSession().get(User.class, userId);
