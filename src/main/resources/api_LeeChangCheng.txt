@@ -12,3 +12,29 @@ localhost:8080/login/loginOut
 参数为用户名和密码如：{'userId':value,'password':value}
 
 返回登录页面
+
+2018/5/1 所完成的API说明
+格式：
+编号
+链接
+
+参数说明
+
+返回说明
+
+1.(未完成)
+service层：ProjectService下的getfwqj
+通过前端传入的json获取信息
+
+返回值为计算后得出的JSON字符串，或者字符串"null"
+数据形式：{"nzfzd"：0,"zjnscdl":0,"yzfzd":0,"zjyscdl":0}
+
+2.(未完成)
+service层：ProjectService下的getzjbj
+通过前端传入的json获取信息
+
+返回值为计算后得出的JSON字符串，或者字符串"null"
+数据形式：
+
+
+

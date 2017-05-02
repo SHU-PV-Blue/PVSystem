@@ -110,7 +110,7 @@ public class SystemService {
         return jsonArray.toString();
     }
 
-    public  String updateProject(String projectId){
+    public String updateProject(String projectId){
         return projectDao.updateProject(projectId).toString();
     }
 
