@@ -76,6 +76,8 @@ public class SystemController {
     public String forget() {
         return "forget";
     }
+
+
     @RequestMapping(value="/list")
     public  String list(){ return "list";}
     @RequestMapping(value = "/forget2")

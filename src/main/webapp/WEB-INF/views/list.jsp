@@ -14,16 +14,15 @@
     <link rel="stylesheet" type="text/css" href="../statics/css/bootstrap.min.css">
     <style type="text/css">
         .center-blockh {
-            display: block;
+            width:80%;
             margin-left: auto;
             margin-right: auto;
 
         }
         table input{
             width:100px;
-            height:40px;
+            height:30px;
         }
-
     </style>
 
 </head>
@@ -59,15 +58,14 @@
 </nav>
 </div>
 <div class="center-blockh">
-    <h2>请填写下面的参数</h2>
-    <table class="table table-bordered" style="text-align: center">
+    <h3>请填写下面的参数</h3>
+    <table class="table table-bordered  table-condensed" style="text-align: center">
         <tr>
         <td>设备费单价(元/w)</td>
         <td>建安费单价(元/w)</td>
-        <td>建安费单价(元/w)</td>
-        <td>建安费单价(元/w)</td>
-        <td>建安费单价(元/w)</td>
-
+        <td>设计费单价(元/w)</td>
+        <td>监理费单价(元/w)</td>
+        <td>分包税金及其他费(元/w)</td>
     </tr>
         <tr>
             <td><input type="text"></td>
@@ -77,11 +75,11 @@
             <td><input type="text"></td>
         </tr>
         <tr>
-            <td>设备费单价(元/w)</td>
-            <td>建安费单价(元/w)</td>
-            <td>建安费单价(元/w)</td>
-            <td>建安费单价(元/w)</td>
-            <td>建安费单价(元/w)</td>
+            <td>综合利率(%)</td>
+            <td>电站年限/年</td>
+            <td>建设期(月)</td>
+            <td>结算周期(月)</td>
+            <td>地方电价(元/Kwh)</td>
 
         </tr>
         <tr>
