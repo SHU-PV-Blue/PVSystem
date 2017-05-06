@@ -42,11 +42,11 @@ public class RegisterController {
      * 以上三点为必填字段,其余字段为mail,phoneNum,userName
      */
     @RequestMapping(value = "/register")
-    public String register(@RequestParam String id, String password,
+    public String register(@RequestParam String userId, String password,
                            String nickname, HttpServletResponse response,
                            HttpServletRequest request){
-        if (systemService.register(id, password, nickname)){
-            Cookie cookie = new Cookie("pvsystemCookie",id);
+        if (systemService.register(userId, password, nickname)){
+            Cookie cookie = new Cookie("pvsystemCookie",userId);
             cookie.setMaxAge(60*60*24*3);
             response.addCookie(cookie);
             return "redirect:/home";
