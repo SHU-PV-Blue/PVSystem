@@ -75,7 +75,7 @@
                         <div class="col-sm-6">
                             <input type="text" class="form-control" id="projectName">
                         </div>
-                        <div class="col-sm-4"><span class="glyphicon glyphicon-remove-" style="color:red"></span></div>
+                        <div class="col-sm-4" id="check"><span class="glyphicon glyphicon-remove-" style="color:red"></span></div>
                     </div>
                 </form>
             </div>

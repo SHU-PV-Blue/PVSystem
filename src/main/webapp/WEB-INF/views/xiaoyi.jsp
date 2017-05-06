@@ -46,7 +46,7 @@
             <div class="thumbnail">
                 <img data-src="holder.js/300x200" alt="参数列表" src="../statics/images/参数.png" class="gao">
                 <div class="caption">
-                    <a href="#" class="btn btn-primary btn-block " role="button">参数列表</a>
+                    <a href="/home/list" class="btn btn-primary btn-block " role="button">参数列表</a>
                 </div>
             </div>
         </div>

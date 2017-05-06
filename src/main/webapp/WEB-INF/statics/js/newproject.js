@@ -3,26 +3,36 @@
  */
 /*$("#projectName").blur(function()
  if(this.value=="")
-
+     alert("项目名不能为空");
+     checkName.html('<span class="glyphicon glyphicon-remove-" style="color:red"></span>项目名不能为空');
 
  )*/
 $("#new1").click(function () {
-        var proName = $('#projectName').val();
-        alert(proName);
-        $.ajax({
-            url: '/project/createProject',
-            data: {'projectName': proName},
-            type: 'get',
-            dataType: 'json',
-            success: function (data) {
-                if (data.status == true) {
-                    location.href = '/home/newProject?projectName='+proName;//js重定向
+        var projectName = $('#projectName').val();
+        var checkName = $('#check');
+        alert(projectName);
+        if (projectName == "") {
+            checkName.html('<span class="glyphicon glyphicon-remove-" style="color:red"></span>项目名不能为空');
+        }
+        else {
+            $.ajax({
+                url: '/project/createProject',
+                data: {'projectName': projectName},
+                type: 'get',
+                dataType: 'json',
+                success: function (data) {
+                    if (data.success == true) {
+                       window .location.href = '/home/newProject?projectName=' + projectName;//js重定向
+                        chckName.css('', 'hidden');
+                    }
+                    else
+                        checkName.html('<span class="glyphicon glyphicon-remove-" style="color:red"></span>该项目名已存在');
+                },
+                error: function () {
+                    alert('error');
                 }
-            },
-            error: function () {
-                alert('error');
-            }
-        });
+            });
+        }
 
     }
 )
