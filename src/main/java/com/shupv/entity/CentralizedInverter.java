@@ -15,8 +15,8 @@ public class CentralizedInverter implements Serializable{
     private String manufacturersName;//厂家
     private String model;//型号
     private int maxDCInputPower;//最大直流输入功率
-    private int maxInputVoltage;//启动电压
-    private int startVoltage;//最大效率
+    private int maxInputVoltage;//最大效率
+    private int startVoltage;//启动电压
     private int mppLVL;  // LVL(Lower Voltage Limit, 电压下限)
     private int mppVL;  // VL(Voltage Limit, 电压上限)
     private int maxDCInputCurrent; //最大直流输入电流
