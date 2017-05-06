@@ -46,11 +46,35 @@ public class ComponentDao extends BaseDao {
 
     public List<CentralizedInverter> queryComponent() {
         try {
-            //System.out.println("HHhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh");
             return this.getSession().createQuery("from CentralizedInverter").list();
         } catch (Exception e) {
-            //System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
             return null;
+        }
+    }
+
+    public JSONObject createCI(String manufacturersName, String model, int maxDCInputPower, int maxInputVoltage, int startVoltage, int mppLVL, int mppVL, int maxDCInputCurrent, int ratedACOutputPower, int maxOutputPower, int maxACOutputCurrent, int ratedGridVoltage, double maxEfficiency) {
+        JSONObject result = new JSONObject();
+        try {
+            CentralizedInverter centralizedInverter=new CentralizedInverter();
+            centralizedInverter.setManufacturersName(manufacturersName);
+            centralizedInverter.setModel(model);
+            centralizedInverter.setMaxDCInputPower(maxDCInputPower);
+            centralizedInverter.setMaxInputVoltage(maxInputVoltage);
+            centralizedInverter.setStartVoltage(startVoltage);
+            centralizedInverter.setMppLVL(mppLVL);
+            centralizedInverter.setMppVL(mppVL);
+            centralizedInverter.setMaxDCInputCurrent(maxDCInputCurrent);
+            centralizedInverter.setRatedACOutputPower(ratedACOutputPower);
+            centralizedInverter.setMaxOutputPower(maxOutputPower);
+            centralizedInverter.setMaxACOutputCurrent(maxACOutputCurrent);
+            centralizedInverter.setRatedGridVoltage(ratedGridVoltage);
+            centralizedInverter.setMaxEfficiency(maxEfficiency);
+            this.getSession().save(centralizedInverter);
+            result.put("status", true);
+        } catch (Exception e) {
+            result.put("status", false);
+        } finally {
+            return result;
         }
     }
 }

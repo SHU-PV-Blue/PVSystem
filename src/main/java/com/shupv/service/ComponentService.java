@@ -33,4 +33,22 @@ public class ComponentService {
             return JSONArrayCentralizedInverter.formatCentralizedInverterArray(result).toString();
         }
     }
+
+    public String createCI(String manufacturersName, String model, int maxDCInputPower, int maxInputVoltage, int startVoltage, int mppLVL, int mppVL, int maxDCInputCurrent, int ratedACOutputPower, int maxOutputPower, int maxACOutputCurrent, int ratedGridVoltage, double maxEfficiency) {
+        return componentDao.createCI(
+                manufacturersName,//厂家
+                model,//型号
+                maxDCInputPower,//最大直流输入功率
+                maxInputVoltage,//最大效率
+                startVoltage,//启动电压
+                mppLVL,  // LVL(Lower Voltage Limit, 电压下限)
+                mppVL,  // VL(Voltage Limit, 电压上限)
+                maxDCInputCurrent, //最大直流输入电流
+                ratedACOutputPower,//额定交流输出功率
+                maxOutputPower,//最大输出功率
+                maxACOutputCurrent,//最大交流输出电流
+                ratedGridVoltage,//最大交流输出电流
+                maxEfficiency//最大效率,
+        ).toString();
+    }
 }
