@@ -8,6 +8,12 @@
         b.style.display = "none";
     }
 
-    fang[0].addEventListener('click', displayPai(heng, shu), false);
-    fang[1].addEventListener('click', displayPai(shu, heng), false);
+    fang[0].onclick=function () {
+        displayPai(heng,shu);
+
+    };
+    fang[0].onclick=function () {
+        displayPai(shu,heng);
+
+    }
 
