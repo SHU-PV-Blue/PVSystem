@@ -59,7 +59,7 @@
 </div>
 <div class="center-blockh">
     <h3>请填写下面的参数</h3>
-    <table class="table table-bordered  table-condensed" style="text-align: center">
+    <table class="table table-bordered  table-condensed" style="text-align: center" id="table1">
         <tr>
         <td>设备费单价(元/w)</td>
         <td>建安费单价(元/w)</td>
@@ -79,7 +79,7 @@
             <td>电站年限/年</td>
             <td>建设期(月)</td>
             <td>结算周期(月)</td>
-            <td>地方电价(元/Kwh)</td>
+            <td>地方电价(元/KWh)</td>
 
         </tr>
         <tr>
@@ -90,11 +90,149 @@
             <td><input type="text"></td>
         </tr>
         <tr>
-            <td>设备费单价(元/w)</td>
-            <td>建安费单价(元/w)</td>
-            <td>建安费单价(元/w)</td>
-            <td>建安费单价(元/w)</td>
-            <td>建安费单价(元/w)</td>
+            <td>分享比例</td>
+            <td>上网电价(元/KWh)</td>
+            <td>自用比例</td>
+            <td>补贴电价1(元/KWh)</td>
+            <td>补贴1年限(年)</td>
+
+        </tr>
+        <tr>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+        </tr>
+    </table>
+    <table class="table table-bordered  table-condensed" style="text-align: center" id="table2">
+        <tr>
+            <td>补贴电价2(元/KWh)</td>
+            <td>补贴2年限(年)</td>
+            <td>销售电价</td>
+            <td>售电增值服务税</td>
+            <td>补贴收入</td>
+        </tr>
+        <tr>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>运维分包单价</td>
+            <td>部分费用分摊率</td>
+            <td>期间费用分摊率</td>
+            <td>项目人工成本工本率</td>
+            <td>项目建造期业务活费动</td>
+
+        </tr>
+        <tr>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>项目直接费用利息利率</td>
+            <td>项目建造期差旅费</td>
+            <td>项目直接费用</td>
+            <td>补贴电价2(元/KWh)</td>
+            <td>补贴2年限(年)</td>
+
+        </tr>
+        <tr>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+        </tr>
+    </table>
+    <table class="table table-bordered  table-condensed" style="text-align: center" id="table3">
+        <tr>
+            <td>补贴电价2(元/KWh)</td>
+            <td>补贴2年限(年)</td>
+            <td>销售电价</td>
+            <td>售电增值服务税</td>
+            <td>补贴收入</td>
+        </tr>
+        <tr>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>运维分包单价</td>
+            <td>部分费用分摊率</td>
+            <td>期间费用分摊率</td>
+            <td>项目人工成本工本率</td>
+            <td>项目建造期业务活费动</td>
+
+        </tr>
+        <tr>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>项目直接费用利息利率</td>
+            <td>项目建造期差旅费</td>
+            <td>项目直接费用</td>
+            <td>补贴电价2(元/KWh)</td>
+            <td>补贴2年限(年)</td>
+
+        </tr>
+        <tr>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+        </tr>
+    </table>
+    <table class="table table-bordered  table-condensed" style="text-align: center" id="table3">
+        <tr>
+            <td>补贴电价2(元/KWh)</td>
+            <td>补贴2年限(年)</td>
+            <td>销售电价</td>
+            <td>售电增值服务税</td>
+            <td>补贴收入</td>
+        </tr>
+        <tr>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>运维分包单价</td>
+            <td>部分费用分摊率</td>
+            <td>期间费用分摊率</td>
+            <td>项目人工成本工本率</td>
+            <td>项目建造期业务活费动</td>
+
+        </tr>
+        <tr>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>项目直接费用利息利率</td>
+            <td>项目建造期差旅费</td>
+            <td>项目直接费用</td>
+            <td>补贴电价2(元/KWh)</td>
+            <td>补贴2年限(年)</td>
 
         </tr>
         <tr>

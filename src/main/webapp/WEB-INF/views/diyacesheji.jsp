@@ -129,10 +129,10 @@
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-md-7">
-                            <select class="form-control" style
+                            <select class="form-control" id="jiselect" style
                                     ="margin-bottom: 10px">
                             </select><!--需要后端加载数据吗-->
-                            <table class="table table-bordered">
+                            <table class="table table-bordered" id="jitable">
                                 <tr>
                                     <td>最大直流输入功率/W</td>
                                     <td>最大输入电压/V</td>
@@ -698,4 +698,5 @@
 </div>
 </body>
 </html>
-<script src="../statics/js/userInfo.js"></script>
+<!--<script src="../statics/js/userInfo.js"></script>-->
+<script src="../statics/js/jizhong.js"></script>
