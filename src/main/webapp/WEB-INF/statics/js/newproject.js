@@ -23,7 +23,7 @@ $("#new1").click(function () {
                 success: function (data) {
                     if (data.success == true) {
                        window .location.href = '/home/newProject?projectName=' + projectName;//js重定向
-                        chckName.css('', 'hidden');
+                        checkName.css('', 'hidden');
                     }
                     else
                         checkName.html('<span class="glyphicon glyphicon-remove-" style="color:red"></span>该项目名已存在');

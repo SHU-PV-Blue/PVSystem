@@ -36,5 +36,26 @@ service层：ProjectService下的getzjbj
 返回值为计算后得出的JSON字符串，或者字符串"null"
 数据形式：
 
+2018/5/7 所完成的API说明
+格式：
+编号
+链接
+
+参数说明
+
+返回说明
+
+1.
+点击"我的项目"跳转到projectList
+查询当前用户所有项目 返回 id 项目名称 创建时间
+
+Dao层:ProjectDao下的getAllProjects
+通过userId拿到projectSet
+
+service层：projectService下的getMyProject
+通过userId返回json数组
+
+Controller层:SystemController下的projectList
+通过cookie拿到userId,返回json数组
 
 

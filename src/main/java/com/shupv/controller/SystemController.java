@@ -1,7 +1,11 @@
 package com.shupv.controller;
 
+import com.shupv.service.ProjectService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CookieValue;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
@@ -108,6 +112,18 @@ public class SystemController {
         return "register";
     }
 
-
+    /**
+     * 点击“我的项目”后进入到projectList.jsp页面
+     *
+     * @return
+     */
+    @Autowired
+    private ProjectService projectService;
+     @RequestMapping(value = "/projectList")
+     @ResponseBody
+    public String projectList(@CookieValue("pvsystemCookie") String cookie) {
+         String userId=cookie;
+         return projectService.getMyProject(userId);
+     }
 }
 

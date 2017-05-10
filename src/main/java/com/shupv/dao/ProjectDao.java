@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.Date;
+import java.util.Set;
 import java.util.TreeSet;
 
 /**
@@ -115,5 +116,16 @@ public class ProjectDao extends BaseDao {
         }
 
         return pr;
+    }
+    /**
+     * 查询当前用户所有项目 返回 id 项目名称 创建时间
+     * @param userId
+     * @return String
+     * by lcc
+     */
+    public Set<Project> getAllProjects(String userId){
+        User user =this.getSession().get(User.class,userId);
+        Set<Project> projectSet= user.getProjectSet();
+        return projectSet;
     }
 }

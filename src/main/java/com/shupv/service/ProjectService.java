@@ -1,12 +1,16 @@
 package com.shupv.service;
 
+
 import com.shupv.dao.ProjectDao;
 import com.shupv.entity.ClimaticData;
 import com.shupv.entity.Project;
 import com.shupv.tools.JSONStatus;
+import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.Set;
 
 import static com.shupv.tools.SecurityTools.nullCheck;
 import static com.shupv.tools.SkipJson.formatProject;
@@ -148,5 +152,22 @@ public class ProjectService {
         //总占地面积(m2)，总组件数(个)，总容量(KW)
         double xxxxxxx=0;
         return "0";
+    }
+    /**
+     * 查询当前用户所有项目 返回 id 项目名称 创建时间
+     * @param userId
+     * @return String
+     */
+    public String getMyProject(String userId){
+        Set<Project> projects=projectDao.getAllProjects(userId);
+        JSONArray jsonArr=new JSONArray();
+        for(Project p:projects){
+            JSONObject jsonStr=new JSONObject();
+            jsonStr.put("p_id",nullCheck(p.getProjectId()));
+            jsonStr.put("p_name",nullCheck(p.getProjectName()));
+            jsonStr.put("p_buildDate",nullCheck(p.getBuildDate()));
+            jsonArr.put(jsonStr);
+        }
+        return jsonArr.toString();
     }
 }

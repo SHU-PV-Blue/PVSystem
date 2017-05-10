@@ -31,7 +31,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav" id="nav1">
                 <li class="active"><a href="/home/project">自定义设备</a></li>
-                <li><a href="">我的项目</a></li>
+                <li><a href="/home/projectList">我的项目</a></li>
                 <li><a data-toggle="modal" data-target="#project">新建项目</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right" id="nav2">

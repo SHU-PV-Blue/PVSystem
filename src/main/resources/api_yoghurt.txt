@@ -42,7 +42,7 @@ localhost:8080//register/checkUser
 5.
 localhost:8080//register/register
 
-参数为用户名，密码，昵称如：{'id':value, 'password':value, 'nickname':value}
+参数为用户名，密码，昵称如：{'userId':value, 'password':value, 'nickname':value}
 
 注册页面，注册成功进入localhost:8080//home，并返回名称为pvsystemCookie的cookie，
 其中保存userId，失败时停留在该页面
